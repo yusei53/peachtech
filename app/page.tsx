@@ -1,7 +1,13 @@
-import React from "react";
+import Activity from "./components/activity";
+import FirstView from "./components/first-view";
 
-const page = () => {
-  return <div>home</div>;
+const HomePage = () => {
+  return (
+    <>
+      <FirstView />
+      <Activity />
+    </>
+  );
 };
 
-export default page;
+export default HomePage;
