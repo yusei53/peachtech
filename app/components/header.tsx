@@ -11,6 +11,7 @@ const Header = () => {
             PeachTech
           </Typography>
         </Box>
+        {/* 共通化するようにゆせさんに言われた */}
         <Link
           href="/"
           underline="none"
