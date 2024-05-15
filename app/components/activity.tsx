@@ -2,6 +2,7 @@
 
 import { Box, Typography, styled } from "@mui/material";
 import { isPeachTechText } from "../const/documents";
+import Underline from "./underline";
 
 const Activity = () => {
   return (
@@ -10,14 +11,7 @@ const Activity = () => {
         <Typography component="h3" fontSize={{ xs: 20, sm: 30 }}>
           PeachTechとは
         </Typography>
-        <Box
-          sx={{
-            width: 40,
-            height: 5,
-            bgcolor: "#FF539B",
-            borderRadius: 0.5,
-          }}
-        />
+        <Underline xsWidth={40} />
         <Typography
           whiteSpace="pre-wrap"
           mt={5}
