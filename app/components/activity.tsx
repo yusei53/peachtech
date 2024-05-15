@@ -28,11 +28,11 @@ const Activity = () => {
       </Box>
       {isPeachTechText.map((text) => (
         <Box
-          key={text.index}
+          key={text.number}
           display="flex"
           justifyContent={{
             xs: "center",
-            sm: text.index === "01" ? "flex-start" : "flex-end",
+            sm: text.number === "01" ? "flex-start" : "flex-end",
           }}
           mx={{ sm: 5 }}
           my={{ xs: 3, sm: 5 }}
@@ -50,7 +50,7 @@ const Activity = () => {
               pb={{ xs: 1, sm: 5 }}
               fontSize={{ xs: 40, sm: 70 }}
             >
-              {text.index}
+              {text.number}
             </Typography>
             <Typography
               whiteSpace="pre-wrap"
