@@ -1,18 +1,15 @@
 "use client";
 
 import { Box, Typography } from "@mui/material";
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import Image from "next/image";
 
 const FirstView = () => {
-  const images = [
-    "https://placehold.jp/640x480.png",
-    "https://placehold.jp/640x480.png",
-  ];
+  const images = ["/640x480.png", "/640x480.png"];
 
   return (
     <Box
@@ -39,7 +36,7 @@ const FirstView = () => {
           {"明日を創造する\n第一歩をともに"}
         </Typography>
         <Box
-          width={{ xs: "100%", lg: "75%" }}
+          width={{ xs: "100%", md: "75%" }}
           height={{ xs: "40vh", sm: "50vh", lg: "80vh" }}
         >
           <Swiper
@@ -48,7 +45,7 @@ const FirstView = () => {
             centeredSlides={true}
             loop={true}
             autoplay={{
-              delay: 5000,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             pagination={{
@@ -59,10 +56,11 @@ const FirstView = () => {
           >
             {images.map((src, index) => (
               <SwiperSlide key={index}>
-                <img
+                <Image
+                  fill
                   src={src}
                   alt={`Slide ${index}`}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  style={{ objectFit: "cover" }}
                 />
               </SwiperSlide>
             ))}
