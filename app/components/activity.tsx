@@ -1,4 +1,6 @@
-import { Box, Typography } from "@mui/material";
+"use client";
+
+import { Box, Typography, styled } from "@mui/material";
 import { isPeachTechText } from "../const/documents";
 
 const Activity = () => {
@@ -39,12 +41,7 @@ const Activity = () => {
           mx={{ sm: 5 }}
           my={{ xs: 3, sm: 5 }}
         >
-          <Box
-            width={{ xs: 370, sm: 700 }}
-            height={{ xs: 370, sm: 700 }}
-            bgcolor="#FFF4FC"
-            borderRadius="50%"
-          >
+          <StyledCircle>
             <Typography
               color="#E7EEF4"
               px={{ xs: 5, sm: 10 }}
@@ -69,7 +66,7 @@ const Activity = () => {
             >
               {text.description}
             </Typography>
-          </Box>
+          </StyledCircle>
         </Box>
       ))}
     </Box>
@@ -77,3 +74,14 @@ const Activity = () => {
 };
 
 export default Activity;
+
+const StyledCircle = styled("div")(({ theme }) => ({
+  width: 370,
+  height: 370,
+  backgroundColor: "#FFF4FC",
+  borderRadius: "50%",
+  [theme.breakpoints.up("sm")]: {
+    width: 700,
+    height: 700,
+  },
+}));
