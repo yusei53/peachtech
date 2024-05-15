@@ -24,6 +24,7 @@ const FirstView = () => {
         width="100%"
       >
         <Typography
+          component="h4"
           whiteSpace="pre-wrap"
           px={{ md: 5, lg: 10 }}
           py={12}

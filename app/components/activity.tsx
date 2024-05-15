@@ -5,7 +5,9 @@ const Activity = () => {
   return (
     <Box>
       <Box display="flex" flexDirection="column" alignItems="center" mt={20}>
-        <Typography fontSize={{ xs: 20, sm: 30 }}>PeachTechとは</Typography>
+        <Typography component="h3" fontSize={{ xs: 20, sm: 30 }}>
+          PeachTechとは
+        </Typography>
         <Box
           sx={{
             width: 40,
@@ -53,6 +55,7 @@ const Activity = () => {
               {text.number}
             </Typography>
             <Typography
+              component="h3"
               whiteSpace="pre-wrap"
               pl={{ xs: 10, sm: 20 }}
               fontSize={{ xs: 20, sm: 30 }}
