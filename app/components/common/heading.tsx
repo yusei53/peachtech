@@ -1,0 +1,26 @@
+import { Box, Typography } from "@mui/material";
+
+type TProps = {
+  title: string;
+};
+
+const Heading: React.FC<TProps> = ({ title }) => {
+  return (
+    <>
+      <Typography component="h3" fontSize={{ xs: 20, sm: 30 }}>
+        {title}
+      </Typography>
+      <Box
+        width={{
+          xs: 40,
+          md: 70,
+        }}
+        height={5}
+        bgcolor="#FF539B"
+        borderRadius={0.5}
+      />
+    </>
+  );
+};
+
+export default Heading;
