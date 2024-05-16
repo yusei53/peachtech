@@ -6,22 +6,22 @@ import Underline from "./underline";
 
 const Activity = () => {
   return (
-    <Box>
-      <Box display="flex" flexDirection="column" alignItems="center" mt={20}>
+    <>
+      <Box display="flex" flexDirection="column" alignItems="center" mt={10}>
         <Typography component="h3" fontSize={{ xs: 20, sm: 30 }}>
           PeachTechとは
         </Typography>
         <Underline xsWidth={40} />
         <Typography
           whiteSpace="pre-wrap"
-          mt={5}
+          my={5}
           px={{ xs: 4, sm: 0 }}
           fontSize={{ xs: 10, sm: 16 }}
           textAlign="center"
         >
-          {
-            "Peach.Techは、成蹊大学の大学公認のプログラミングサークルです。\n成蹊のエンジニア同士で繋がることができる場所を目指しています。仮の文章。"
-          }
+          Peach.Techは、成蹊大学の大学公認のプログラミングサークルです。
+          <br />
+          成蹊のエンジニア同士で繋がることができる場所を目指しています。仮の文章。
         </Typography>
       </Box>
       {isPeachTechText.map((text) => (
@@ -32,50 +32,40 @@ const Activity = () => {
             xs: "center",
             sm: text.number === "01" ? "flex-start" : "flex-end",
           }}
-          mx={{ sm: 5 }}
-          my={{ xs: 3, sm: 5 }}
+          mx={{ sm: 15 }}
         >
           <StyledCircle>
-            <Typography
-              color="#E7EEF4"
-              px={{ xs: 5, sm: 10 }}
-              pt={{ xs: 5, sm: 5 }}
-              pb={{ xs: 1, sm: 5 }}
-              fontSize={{ xs: 40, sm: 70 }}
-            >
-              {text.number}
-            </Typography>
-            <Typography
-              component="h3"
-              whiteSpace="pre-wrap"
-              pl={{ xs: 10, sm: 20 }}
-              fontSize={{ xs: 20, sm: 30 }}
-            >
-              {text.title}
-            </Typography>
-            <Typography
-              fontSize={{ xs: 10, sm: 16 }}
-              px={{ xs: 6, sm: 10 }}
-              py={{ xs: 2, sm: 8 }}
-            >
-              {text.description}
-            </Typography>
+            <Box px={{ xs: 5, sm: 10 }}>
+              <Typography color="#E7EEF4" pt={5} fontSize={{ xs: 40, sm: 75 }}>
+                {text.number}
+              </Typography>
+              <Typography
+                component="h3"
+                whiteSpace="pre-wrap"
+                fontSize={{ xs: 20, sm: 30 }}
+              >
+                {text.title}
+              </Typography>
+              <Typography fontSize={{ xs: 10, sm: 16 }} py={{ xs: 2, sm: 4 }}>
+                {text.description}
+              </Typography>
+            </Box>
           </StyledCircle>
         </Box>
       ))}
-    </Box>
+    </>
   );
 };
 
 export default Activity;
 
 const StyledCircle = styled("div")(({ theme }) => ({
-  width: 370,
-  height: 370,
+  width: 580,
+  height: 580,
   backgroundColor: "#FFF4FC",
   borderRadius: "50%",
-  [theme.breakpoints.up("sm")]: {
-    width: 700,
-    height: 700,
+  [theme.breakpoints.down("sm")]: {
+    width: 350,
+    height: 350,
   },
 }));
