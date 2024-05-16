@@ -6,7 +6,12 @@ type TProps = {
 
 const Heading: React.FC<TProps> = ({ title }) => {
   return (
-    <>
+    <Box
+      display={"flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      flexDirection={"column"}
+    >
       <Typography component="h3" fontSize={{ xs: 20, sm: 30 }}>
         {title}
       </Typography>
@@ -19,7 +24,7 @@ const Heading: React.FC<TProps> = ({ title }) => {
         bgcolor="#FF539B"
         borderRadius={0.5}
       />
-    </>
+    </Box>
   );
 };
 
