@@ -1,4 +1,5 @@
 import Activity from "./components/activity";
+import ActivityContent from "./components/activity-content";
 import FirstView from "./components/first-view";
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <FirstView />
       <Activity />
+      <ActivityContent />
     </>
   );
 };
