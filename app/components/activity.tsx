@@ -2,16 +2,13 @@
 
 import { Box, Typography, styled } from "@mui/material";
 import { isPeachTechText } from "../const/documents";
-import Underline from "./underline";
+import Heading from "./common/heading";
 
 const Activity = () => {
   return (
     <>
       <Box display="flex" flexDirection="column" alignItems="center" mt={10}>
-        <Typography component="h3" fontSize={{ xs: 20, sm: 30 }}>
-          PeachTechとは
-        </Typography>
-        <Underline xsWidth={40} />
+        <Heading title="PeachTechとは" />
         <Typography
           whiteSpace="pre-wrap"
           my={5}
