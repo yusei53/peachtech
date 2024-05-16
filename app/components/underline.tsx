@@ -3,24 +3,15 @@ import { Box } from "@mui/material";
 
 interface UnderlineProps {
   xsWidth?: number;
-  smWidth?: number;
   mdWidth?: number;
-  lgWidth?: number;
 }
 
-const Underline: FC<UnderlineProps> = ({
-  xsWidth,
-  smWidth,
-  mdWidth,
-  lgWidth,
-}) => {
+const Underline: FC<UnderlineProps> = ({ xsWidth, mdWidth }) => {
   return (
     <Box
       width={{
         xs: xsWidth ? xsWidth : 50,
-        sm: smWidth ? smWidth : 50,
         md: mdWidth ? mdWidth : 50,
-        lg: lgWidth ? lgWidth : 50,
       }}
       height={5}
       bgcolor="#FF539B"
