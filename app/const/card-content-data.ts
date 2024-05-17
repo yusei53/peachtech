@@ -1,4 +1,4 @@
-type cardContentDataProps = {
+export type cardContentDataProps = {
   src: string;
   title: string;
   content: string;
