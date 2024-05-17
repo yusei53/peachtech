@@ -5,14 +5,13 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
+import { cardContentDataProps } from "../const/card-content-data";
 
-type TProps = {
-  src: string;
-  title: string;
-  content: string;
-};
-
-const ActivityCard: React.FC<TProps> = ({ src, title, content }) => {
+const ActivityCard: React.FC<cardContentDataProps> = ({
+  src,
+  title,
+  content,
+}) => {
   return (
     <Card sx={{ maxWidth: "auto" }}>
       <CardActionArea>
