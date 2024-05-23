@@ -1,5 +1,7 @@
+import FormBar from "../components/contact/form-bar";
+
 const page = () => {
-  return <div>contact</div>;
+  return <FormBar />;
 };
 
 export default page;
