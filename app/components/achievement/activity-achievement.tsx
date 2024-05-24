@@ -12,21 +12,21 @@ const ActivityAchievement = () => {
       <Grid container spacing={{ xs: 2, md: 10 }} pt={15}>
         {achievementContentData.map((data) => (
           <React.Fragment key={data.src}>
-            <Grid item md={12} display={"flex"} justifyContent={"center"}>
+            <Grid
+              item
+              md={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              flexDirection={"column"}
+              margin={"0 auto"}
+            >
               <AchievementCard
                 src={data.src}
                 date={data.date}
                 title={data.title}
                 content={data.content}
               />
-            </Grid>
-            <Grid
-              item
-              md={12}
-              mt={1}
-              display={"flex"}
-              justifyContent={"center"}
-            >
               <Divider sx={{ width: "80%" }} color={"black"} />
             </Grid>
           </React.Fragment>
