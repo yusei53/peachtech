@@ -1,5 +1,7 @@
+import QuestionBar from "../components/question-bar";
+
 const page = () => {
-  return <div>contact</div>;
+  return <QuestionBar />;
 };
 
 export default page;
