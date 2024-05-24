@@ -1,40 +1,53 @@
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Box,
-  Typography,
-  Divider,
-  Link,
-} from "@mui/material";
+import { Box, Typography, Divider, Link } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Heading from "../common/heading";
 
-const FormBar = () => {
+type TProps = {
+  title: string;
+  subtitle: string;
+  src: string;
+  description: string;
+};
+
+const FormBar: React.FC<TProps> = ({ title, subtitle, src, description }) => {
   return (
     <Box display="flex" flexDirection={"column"} alignItems={"center"} py={10}>
-      <Heading title="参加方法" />
-      <Box width={"75%"} mt={5}>
-        <Divider color="black" />
-        <Box p={3}>
-          <Typography fontSize={{ xs: 19, sm: 24 }} mb={2}>
-            参加フォーム
-          </Typography>
-          <Link
-            href="https://mui.com/material-ui/"
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ textDecoration: "none", color: "black" }}
+      <Heading title={title} />
+      <Box width={{ xs: "90%", sm: "60%" }} mt={5}>
+        <Divider />
+        <Link
+          href={src}
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ textDecoration: "none", color: "black" }}
+        >
+          <Box
+            display="flex"
+            alignItems={"center"}
+            px={3}
+            py={2}
+            position={"relative"}
           >
-            <Box display={"flex"} alignItems={"center"}>
-              <Typography fontSize={{ xs: 15, sm: 20 }}>
-                参加フォームにご回答いただいた後、メールアドレス宛にdiscordの招待リンクを送信します
+            <Box>
+              <Typography
+                fontSize={{ xs: 17, sm: 18 }}
+                fontWeight={"bold"}
+                mb={1}
+              >
+                {subtitle}
               </Typography>
-              <ChevronRightIcon fontSize="medium" />
+
+              <Typography fontSize={{ xs: 13, sm: 13 }} color="gray" pr={4}>
+                {description}
+              </Typography>
             </Box>
-          </Link>
-        </Box>
-        <Divider color="black" />
+            <ChevronRightIcon
+              fontSize="large"
+              sx={{ position: "absolute", right: 5, fontWeight: 100 }}
+            />
+          </Box>
+        </Link>
+        <Divider />
       </Box>
     </Box>
   );
