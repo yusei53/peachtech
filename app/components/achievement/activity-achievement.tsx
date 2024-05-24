@@ -10,8 +10,8 @@ const ActivityAchievement = () => {
       <Heading title="活動実績" />
 
       <Grid container spacing={{ xs: 2, md: 10 }} pt={15}>
-        {achievementContentData.map((data, index) => (
-          <React.Fragment key={index}>
+        {achievementContentData.map((data) => (
+          <React.Fragment key={data.src}>
             <Grid item md={12} display={"flex"} justifyContent={"center"}>
               <AchievementCard
                 src={data.src}
@@ -20,8 +20,13 @@ const ActivityAchievement = () => {
                 content={data.content}
               />
             </Grid>
-
-            <Grid md={12} mt={8} display={"flex"} justifyContent={"center"}>
+            <Grid
+              item
+              md={12}
+              mt={1}
+              display={"flex"}
+              justifyContent={"center"}
+            >
               <Divider sx={{ width: "80%" }} color={"black"} />
             </Grid>
           </React.Fragment>
