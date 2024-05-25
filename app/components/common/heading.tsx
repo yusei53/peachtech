@@ -1,10 +1,10 @@
 import { Box, Typography } from "@mui/material";
 
-type TProps = {
+type Tprops = {
   title: string;
 };
 
-const Heading: React.FC<TProps> = ({ title }) => {
+const Heading: React.FC<Tprops> = ({ title }) => {
   return (
     <Box
       display={"flex"}
