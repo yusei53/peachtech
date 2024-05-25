@@ -22,7 +22,7 @@ const FormBar: React.FC<TProps> = ({ title, subtitle, src, description }) => {
           sx={{ textDecoration: "none", color: "black" }}
         >
           <Box
-            display="flex"
+            display={"flex"}
             alignItems={"center"}
             px={3}
             py={2}
@@ -36,14 +36,13 @@ const FormBar: React.FC<TProps> = ({ title, subtitle, src, description }) => {
               >
                 {subtitle}
               </Typography>
-
               <Typography fontSize={{ xs: 13, sm: 13 }} color="gray" pr={4}>
                 {description}
               </Typography>
             </Box>
             <ChevronRightIcon
               fontSize="large"
-              sx={{ position: "absolute", right: 5, fontWeight: 100 }}
+              sx={{ position: "absolute", right: 5 }}
             />
           </Box>
         </Link>
