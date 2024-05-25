@@ -1,14 +1,14 @@
-export type cardContentDataProps = {
+export type activityContentDataProps = {
   src: string;
   title: string;
   content: string;
 };
 
-export const cardContentData: cardContentDataProps[] = [
+export const activityContentData: activityContentDataProps[] = [
   {
     src: "./pinatsu.png",
     title: "あいうえお",
-    content: "あいうえお",
+    content: "あいうえおあいうえおあいうえおあいうえおdddddd",
   },
   {
     src: "./pinatsu.png",

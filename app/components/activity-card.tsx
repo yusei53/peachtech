@@ -5,9 +5,9 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
-import { cardContentDataProps } from "../const/card-content-data";
+import { activityContentDataProps } from "../const/activity-content-data";
 
-const ActivityCard: React.FC<cardContentDataProps> = ({
+const ActivityCard: React.FC<activityContentDataProps> = ({
   src,
   title,
   content,
