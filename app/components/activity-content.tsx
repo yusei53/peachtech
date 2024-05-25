@@ -5,9 +5,9 @@ import { cardContentData } from "../const/card-content-data";
 
 const ActivityContent = () => {
   return (
-    <Box bgcolor={"#FFF4FC"} py={10} px={{ xs: 5, md: 35 }}>
+    <Box bgcolor={"#FFF4FC"} py={10} px={{ xs: 5, md: 30 }}>
       <Heading title="活動内容" />
-      <Grid container spacing={{ xs: 2, md: 10 }} pt={5}>
+      <Grid container spacing={{ xs: 2, md: 5 }} pt={5}>
         {cardContentData.map((data) => (
           <Grid
             key={data.title}

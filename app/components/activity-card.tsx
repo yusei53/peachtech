@@ -13,25 +13,26 @@ const ActivityCard: React.FC<cardContentDataProps> = ({
   content,
 }) => {
   return (
-    <Card sx={{ maxWidth: "auto" }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="auto"
-          image={src}
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography
-            gutterBottom
-            textAlign={"center"}
-            fontSize={{ xs: 16, md: 22 }}
-          >
-            {title}
-          </Typography>
-          <Typography fontSize={{ xs: 12, md: 16 }}>{content}</Typography>
-        </CardContent>
-      </CardActionArea>
+    <Card sx={{ minWidth: "auto", height: "100%" }}>
+      <CardMedia component="img" image={src} alt="green iguana" />
+      <CardContent
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <Typography
+          gutterBottom
+          textAlign={"center"}
+          fontSize={{ xs: 16, md: 20 }}
+          whiteSpace={"nowrap"}
+        >
+          {title}
+        </Typography>
+        <Typography fontSize={{ xs: 12, md: 15 }}>{content}</Typography>
+      </CardContent>
     </Card>
   );
 };
