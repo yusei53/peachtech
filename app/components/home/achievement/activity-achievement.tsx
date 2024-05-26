@@ -1,8 +1,8 @@
+import { Fragment } from "react";
 import { Box, Divider } from "@mui/material";
 import { achievementContentData } from "@/app/const/achievement-data";
 import AchievementCard from "./achievement-card";
 import Heading from "../../common/heading";
-import { Fragment } from "react";
 
 const ActivityAchievement = () => {
   return (
