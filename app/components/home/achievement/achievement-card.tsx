@@ -10,42 +10,31 @@ const AchievementCard: React.FC<achievementDataProps> = ({
   content,
 }) => {
   return (
-    <Box display={"flex"} width={"80%"}>
-      <Box
-        width={{ xs: 360, md: 450 }}
-        height={{ xs: 240, md: 300 }}
-        position={"relative"}
-        display={"flex"}
-        alignItems={"center"}
-      >
+    <Box display={"flex"} alignItems={"flex-start"} py={3}>
+      <Box flex={3.5} display={"flex"} justifyContent={"center"}>
         <Image
           width={450}
           height={300}
-          sizes="100vw"
           style={{
-            width: "100%",
+            maxWidth: "100%",
             height: "auto",
           }}
           src={src}
-          alt=""
+          alt="achievement-image"
         />
       </Box>
       <Box
-        width={{ xs: 450, md: 600 }}
-        px={7}
+        flex={6.5}
         display={"flex"}
+        justifyContent={"center"}
         flexDirection={"column"}
-        gap={2}
+        px={5}
       >
-        <Typography fontSize={{ xs: 10, md: 20 }}>{date}</Typography>
-        <Typography
-          gutterBottom
-          fontSize={{ xs: 12, md: 24 }}
-          fontWeight={"bold"}
-        >
+        <Typography fontSize={{ xs: 10, md: 16 }}>{date}</Typography>
+        <Typography fontSize={{ xs: 12, md: 22 }} fontWeight={"bold"} mb={1}>
           {title}
         </Typography>
-        <Typography fontSize={{ xs: 10, md: 15, lg: 20 }}>{content}</Typography>
+        <Typography fontSize={{ xs: 10, md: 16 }}>{content}</Typography>
       </Box>
     </Box>
   );
