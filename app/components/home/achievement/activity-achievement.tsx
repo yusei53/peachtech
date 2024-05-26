@@ -23,7 +23,7 @@ const ActivityAchievement = () => {
               title={data.title}
               content={data.content}
             />
-            <Divider sx={{ width: "100%" }} color={"black"} />
+            <Divider sx={{ width: "100%" }} color={"#f7f7f7"} />
           </React.Fragment>
         ))}
       </Box>
