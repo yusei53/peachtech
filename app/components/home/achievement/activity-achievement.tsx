@@ -1,8 +1,8 @@
-import { Box, Divider, Grid } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import { achievementContentData } from "@/app/const/achievement-data";
 import AchievementCard from "./achievement-card";
-import React from "react";
 import Heading from "../../common/heading";
+import { Fragment } from "react";
 
 const ActivityAchievement = () => {
   return (
@@ -16,7 +16,7 @@ const ActivityAchievement = () => {
         px={10}
       >
         {achievementContentData.map((data) => (
-          <React.Fragment key={data.src}>
+          <Fragment key={data.src}>
             <AchievementCard
               src={data.src}
               date={data.date}
@@ -24,7 +24,7 @@ const ActivityAchievement = () => {
               content={data.content}
             />
             <Divider sx={{ width: "100%" }} color={"#f7f7f7"} />
-          </React.Fragment>
+          </Fragment>
         ))}
       </Box>
     </Box>
