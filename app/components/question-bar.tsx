@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Heading from "./common/heading";
+import { Description } from "@mui/icons-material";
 
 const QuestionBar = () => {
   return (
@@ -33,7 +34,7 @@ const QuestionBar = () => {
               },
             }}
           >
-            <Typography>質問1</Typography>
+            <Typography>質問１</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
@@ -65,9 +66,14 @@ const QuestionBar = () => {
             expandIcon={<ChevronRightIcon sx={{ mr: 1 }} />}
             aria-controls="panel1-content"
             id="panel1-header"
-            sx={{ flexDirection: "row-reverse" }}
+            sx={{
+              flexDirection: "row-reverse",
+              "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+                transform: "rotate(90deg)",
+              },
+            }}
           >
-            <Typography>質問1</Typography>
+            <Typography>質問１</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
@@ -82,9 +88,14 @@ const QuestionBar = () => {
             expandIcon={<ChevronRightIcon sx={{ mr: 1 }} />}
             aria-controls="panel1-content"
             id="panel1-header"
-            sx={{ flexDirection: "row-reverse" }}
+            sx={{
+              flexDirection: "row-reverse",
+              "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+                transform: "rotate(90deg)",
+              },
+            }}
           >
-            <Typography>質問1</Typography>
+            <Typography>質問１</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
