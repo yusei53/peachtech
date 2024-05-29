@@ -6,14 +6,14 @@ import Heading from "../../common/heading";
 
 const ActivityAchievement = () => {
   return (
-    <Box py={13} px={{ xs: 5, md: 5 }}>
+    <Box py={13}>
       <Heading title="活動実績" />
       <Box
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
         flexDirection={"column"}
-        px={10}
+        px={{ xs: 5, md: 20 }}
       >
         {achievementContentData.map((data) => (
           <Fragment key={data.src}>
