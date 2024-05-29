@@ -1,7 +1,6 @@
 import { achievementDataProps } from "@/app/const/achievement-data";
-import { Box, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import React from "react";
 
 const AchievementCard: React.FC<achievementDataProps> = ({
   src,
@@ -10,8 +9,8 @@ const AchievementCard: React.FC<achievementDataProps> = ({
   content,
 }) => {
   return (
-    <Box display={"flex"} alignItems={"flex-start"} py={3}>
-      <Box flex={3.5} display={"flex"} justifyContent={"center"}>
+    <Grid container display={"flex"} alignItems={"flex-start"} py={3}>
+      <Grid item xs={4} display={"flex"} justifyContent={"center"}>
         <Image
           width={450}
           height={300}
@@ -22,9 +21,10 @@ const AchievementCard: React.FC<achievementDataProps> = ({
           src={src}
           alt="achievement-image"
         />
-      </Box>
-      <Box
-        flex={6.5}
+      </Grid>
+      <Grid
+        item
+        xs={8}
         display={"flex"}
         justifyContent={"center"}
         flexDirection={"column"}
@@ -35,8 +35,8 @@ const AchievementCard: React.FC<achievementDataProps> = ({
           {title}
         </Typography>
         <Typography fontSize={{ xs: 10, md: 16 }}>{content}</Typography>
-      </Box>
-    </Box>
+      </Grid>
+    </Grid>
   );
 };
 
