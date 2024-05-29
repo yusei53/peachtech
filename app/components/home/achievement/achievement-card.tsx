@@ -40,7 +40,7 @@ const AchievementCard: React.FC<achievementDataProps> = ({
         <Typography fontSize={{ xs: 12, md: 22 }} fontWeight={"bold"} mb={1}>
           {title}
         </Typography>
-        <Typography fontSize={{ xs: 10, md: 16 }} letterSpacing={{ md: "1px" }}>
+        <Typography fontSize={{ xs: 10, md: 16 }} letterSpacing={{ md: 1 }}>
           {content}
         </Typography>
       </Grid>
