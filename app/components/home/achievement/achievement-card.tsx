@@ -1,7 +1,6 @@
 import { achievementDataProps } from "@/app/const/achievement-data";
 import { Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import React from "react";
 
 const AchievementCard: React.FC<achievementDataProps> = ({
   src,
