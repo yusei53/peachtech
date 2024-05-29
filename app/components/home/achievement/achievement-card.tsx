@@ -9,8 +9,14 @@ const AchievementCard: React.FC<achievementDataProps> = ({
   content,
 }) => {
   return (
-    <Grid container display={"flex"} alignItems={"flex-start"} py={3}>
-      <Grid item xs={4} display={"flex"} justifyContent={"center"}>
+    <Grid
+      container
+      display={"flex"}
+      alignItems={"flex-start"}
+      py={3}
+      spacing={2}
+    >
+      <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
         <Image
           width={450}
           height={300}
@@ -24,17 +30,19 @@ const AchievementCard: React.FC<achievementDataProps> = ({
       </Grid>
       <Grid
         item
-        xs={8}
+        xs={12}
+        md={8}
         display={"flex"}
         justifyContent={"center"}
         flexDirection={"column"}
-        px={5}
       >
         <Typography fontSize={{ xs: 10, md: 16 }}>{date}</Typography>
         <Typography fontSize={{ xs: 12, md: 22 }} fontWeight={"bold"} mb={1}>
           {title}
         </Typography>
-        <Typography fontSize={{ xs: 10, md: 16 }}>{content}</Typography>
+        <Typography fontSize={{ xs: 10, md: 16 }} letterSpacing={{ md: "1px" }}>
+          {content}
+        </Typography>
       </Grid>
     </Grid>
   );
