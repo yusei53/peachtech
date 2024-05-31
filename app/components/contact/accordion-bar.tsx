@@ -7,7 +7,6 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import React from "react";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordion from "@mui/material/Accordion";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -20,10 +19,14 @@ const AccordionBar: React.FC<accordionContentDataProps> = ({
   return (
     <Accordion>
       <AccordionSummary>
-        <Typography>{accordionTitle}</Typography>
+        <Typography fontSize={{ xs: 14, sm: 18 }} fontWeight={"bold"}>
+          {accordionTitle}
+        </Typography>
       </AccordionSummary>
-      <AccordionDetails>
-        <Typography fontSize={{ xs: 13, sm: 15 }}>{description}</Typography>
+      <AccordionDetails sx={{ py: 0.5 }}>
+        <Typography pl={{ xs: 1.5, sm: 4 }} fontSize={{ xs: 13, sm: 15 }}>
+          {description}
+        </Typography>
       </AccordionDetails>
     </Accordion>
   );
@@ -31,12 +34,10 @@ const AccordionBar: React.FC<accordionContentDataProps> = ({
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-  width: "90%",
-
   borderTop: `1px solid ${theme.palette.divider}`,
   borderBottom: `1px solid ${theme.palette.divider}`,
   backgroundColor: "white",
-  padding: "15px 5px",
+  padding: "5px",
   "&:not(:last-child)": {
     borderBottom: 0,
   },
@@ -44,8 +45,7 @@ const Accordion = styled((props: AccordionProps) => (
     display: "none",
   },
   [theme.breakpoints.down("md")]: {
-    width: "90%",
-    padding: "20px 0px",
+    padding: "5px 0px",
   },
 }));
 const AccordionSummary = styled((props: AccordionSummaryProps) => (
@@ -62,6 +62,7 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
     transform: "rotate(90deg)",
   },
   "& .MuiAccordionSummary-content": {
+    margin: 0,
     marginLeft: theme.spacing(1),
     [theme.breakpoints.down("md")]: {
       marginLeft: "2px",

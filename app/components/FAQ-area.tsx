@@ -8,7 +8,7 @@ const FAQArea = () => {
   return (
     <Box display="flex" flexDirection={"column"} alignItems={"center"} py={10}>
       <Heading title="よくある質問" />
-      <Box py={5}>
+      <Box width={"80%"} py={5}>
         {accordionContentData.map((data) => (
           <Fragment key={data.accordionTitle}>
             <AccordionBar

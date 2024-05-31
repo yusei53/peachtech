@@ -5,19 +5,20 @@ export type accordionContentDataProps = {
 
 export const accordionContentData: accordionContentDataProps[] = [
   {
-    accordionTitle: "あuadbjvufbnejqebvjlqegfuofqえお",
-    description: "かかきくけこ",
+    accordionTitle: "初心者でも大丈夫ですか",
+    description: "かかきくけこあああああああああああああ",
   },
   {
-    accordionTitle: "あいうえお",
-    description: "かかきくけこ",
+    accordionTitle: "どんなサークルですか",
+    description: "かかきくけこああああああああああああああああああ",
   },
   {
-    accordionTitle: "あいうえお",
-    description: "かかきくけこ",
+    accordionTitle: "男女比はどのくらいですか",
+    description:
+      "かかきくけこあああああああああああああああああああああああああ",
   },
   {
-    accordionTitle: "あいうえお",
-    description: "かかきくけこ",
+    accordionTitle: "週にどのくらい活動してますか",
+    description: "かかきくけこああああああああああああああああああ",
   },
 ];
