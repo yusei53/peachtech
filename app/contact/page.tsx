@@ -1,7 +1,8 @@
-import QuestionBar from "../components/question-bar";
+import FAQArea from "../components/FAQ-area";
+import QuestionBar from "../components/FAQ-area";
 
 const page = () => {
-  return <QuestionBar />;
+  return <FAQArea />;
 };
 
 export default page;
