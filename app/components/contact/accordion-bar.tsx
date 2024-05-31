@@ -48,6 +48,7 @@ const Accordion = styled((props: AccordionProps) => (
     padding: "5px 0px",
   },
 }));
+
 const AccordionSummary = styled((props: AccordionSummaryProps) => (
   <MuiAccordionSummary
     expandIcon={<ChevronRightIcon fontSize={"medium"} />}
