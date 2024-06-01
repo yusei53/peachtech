@@ -1,6 +1,7 @@
-import Activity from "./components/activity";
-import ActivityContent from "./components/activity-content";
-import FirstView from "./components/first-view";
+import Activity from "./components/home/introduction/activity";
+import ActivityContent from "./components/home/content/activity-content";
+import FirstView from "./components/home/introduction/first-view";
+import ActivityAchievement from "./components/home/achievement/activity-achievement";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <FirstView />
       <Activity />
       <ActivityContent />
+      <ActivityAchievement />
     </>
   );
 };

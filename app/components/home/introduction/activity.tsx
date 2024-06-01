@@ -1,8 +1,8 @@
 "use client";
 
 import { Box, Typography, styled } from "@mui/material";
-import { isPeachTechText } from "../const/documents";
-import Heading from "./common/heading";
+import { isPeachTechText } from "../../../const/documents";
+import Heading from "../../common/heading";
 
 const Activity = () => {
   return (
