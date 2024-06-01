@@ -1,4 +1,5 @@
 import FormBar from "../components/contact/form-bar";
+import FAQArea from "../components/FAQ-area";
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
         src="/404"
         description="気になることや、企業様からのお問い合わせはこちらです"
       />
+      <FAQArea />
     </>
   );
 };
