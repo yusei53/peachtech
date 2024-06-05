@@ -7,11 +7,8 @@ const SubHeader = () => {
       alignItems={"center"}
       py={10}
       px={{ xs: 4, md: 25 }}
+      height={{ xs: "35vh", md: "25vh" }}
       sx={{
-        height: {
-          xs: "35vh",
-          md: "25vh",
-        },
         backgroundImage: `url("/gallery4.jpg")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
