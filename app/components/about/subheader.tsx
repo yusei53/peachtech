@@ -21,7 +21,6 @@ const SubHeader = () => {
         display={"flex"}
         justifyContent={"flex-end"}
         spacing={{ xs: 5, md: 5 }}
-        sx={{ opacity: 0.75 }}
       >
         <Grid item xs={12} md={4}>
           <Typography fontSize={{ xs: 22, md: 25 }} fontWeight={"bold"}>
@@ -30,7 +29,6 @@ const SubHeader = () => {
           <Divider
             sx={{
               backgroundColor: "#FF539B",
-              opacity: 0.8,
               width: { xs: 190, md: 210 },
               height: 3,
             }}
