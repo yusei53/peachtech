@@ -13,22 +13,13 @@ const footer = () => {
         position={"relative"}
         bgcolor={"#eeeeee"}
         display={"flex"}
-        flexDirection={"column"}
         justifyContent={"flex-start"}
-        px={{ xs: 17, md: 25, lg: 35 }}
+        flexDirection={"column"}
+        px={{ xs: 10, md: 20, lg: 35 }}
         py={8}
       >
         <Grid item>
-          <Image
-            src="/peachtech.png"
-            alt="logo"
-            width={75}
-            height={75}
-            style={{
-              maxWidth: "100%",
-              height: "auto",
-            }}
-          />
+          <Image src="/peachtech.png" alt="logo" width={75} height={75} />
         </Grid>
         <Grid item>
           <Grid
