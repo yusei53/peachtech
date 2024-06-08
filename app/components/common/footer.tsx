@@ -8,8 +8,6 @@ const Footer = () => {
   return (
     <Grid
       container
-      width={"100%"}
-      position={"relative"}
       bgcolor={"#eeeeee"}
       display={"flex"}
       justifyContent={"flex-start"}
