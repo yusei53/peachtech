@@ -4,7 +4,7 @@ import { Box, Grid, Link, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 
-const footer = () => {
+const Footer = () => {
   return (
     <>
       <Grid
@@ -90,4 +90,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
