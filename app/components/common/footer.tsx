@@ -46,7 +46,7 @@ const Footer = () => {
             </Link>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography fontSize={{ xs: 10, md: 16 }}>Follow Us</Typography>
+            <Typography fontSize={{ xs: 12, md: 16 }}>Follow Us</Typography>
             <Box display={"flex"} justifyContent={"flex-start"} gap={0.5}>
               <Link href="https://x.com/PeachTech_0927">
                 <XIcon sx={{ color: "black" }} />
