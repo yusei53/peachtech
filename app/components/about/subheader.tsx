@@ -16,12 +16,7 @@ const SubHeader = () => {
         backgroundBlendMode: "lighten",
       }}
     >
-      <Grid
-        container
-        display={"flex"}
-        justifyContent={"flex-end"}
-        spacing={{ xs: 5, md: 5 }}
-      >
+      <Grid container display={"flex"} justifyContent={"flex-end"} spacing={5}>
         <Grid item xs={12} md={4}>
           <Typography fontSize={{ xs: 22, md: 25 }} fontWeight={"bold"}>
             PeachTechの価値観
