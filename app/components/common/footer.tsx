@@ -1,6 +1,7 @@
+"use client";
 import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Link, Typography, styled } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 
@@ -12,9 +13,10 @@ const Footer = () => {
       justifyContent={{ xs: "flex-start", sm: "center" }}
       flexDirection={"column"}
       px={{ xs: 10, md: 20, lg: 35 }}
+      py={5}
     >
       <Box>
-        <Image src="/peachtech.png" alt="logo" width={75} height={75} />
+        <SImage src="/peachtech.png" alt="logo" width={70} height={70} />
       </Box>
 
       <Box
@@ -62,5 +64,16 @@ const Footer = () => {
     </Box>
   );
 };
+
+const SImage = styled(Image)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: 60,
+    height: 60,
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: 50,
+    height: 50,
+  },
+}));
 
 export default Footer;
