@@ -5,15 +5,15 @@ export type snsDataProps = {
 
 export const snsData: snsDataProps[] = [
   {
-    src: "/techtrain-logo.jpeg",
+    src: "/TechTrain-icon.png",
     href: "https://www.instagram.com/peachtech_0927",
   },
   {
-    src: "/techtrain-logo.jpeg",
+    src: "/TechTrain-icon.png",
     href: "https://x.com/PeachTech_0927",
   },
   {
-    src: "/techtrain-logo.jpeg",
+    src: "/TechTrain-icon.png",
     href: "https://www.instagram.com/peachtech_0927",
   },
 ];
