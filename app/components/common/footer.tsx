@@ -14,19 +14,15 @@ const Footer = () => {
       px={{ xs: 10, md: 20, lg: 35 }}
       py={5}
     >
-      <Box>
-        <SImage src="/peachtech.png" alt="logo" width={70} height={70} />
-      </Box>
-
+      <SImage src="/peachtech.png" alt="logo" width={70} height={70} />
       <Box
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent={"space-between"}
-        gap={{ xs: 5 }}
+        gap={5}
       >
         <Box>
           <Typography fontSize={{ xs: 12, md: 20 }}>Peach Tech</Typography>
-
           <Typography mt={1} color={"gray"} fontSize={{ xs: 10, md: 16 }}>
             〒170-8633 <br />
             東京都武蔵野市吉祥寺北町３丁目３−１
@@ -51,19 +47,32 @@ const Footer = () => {
         </Box>
         <Box>
           <Typography fontSize={{ xs: 12, md: 20 }}>Developers</Typography>
-          <Typography color={"gray"} fontSize={{ xs: 10, md: 16 }}>
-            そら
-            <br />
-            あい
-            <br />
-            ひかり
-          </Typography>
+          <Box
+            display={"flex"}
+            flexDirection={{ xs: "column", md: "row" }}
+            justifyContent={"space-between"}
+            gap={{ md: 3 }}
+          >
+            <Typography color={"gray"} fontSize={{ xs: 10, md: 16 }}>
+              今村 悠聖
+              <br />
+              水澤 祐翔
+              <br />
+              計良 夏輝
+            </Typography>
+            <Typography color={"gray"} fontSize={{ xs: 10, md: 16 }}>
+              澤野 そら
+              <br />
+              高橋 光
+              <br />
+              東郷 愛
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Box>
   );
 };
-
 const SImage = styled(Image)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     width: 60,
@@ -74,5 +83,4 @@ const SImage = styled(Image)(({ theme }) => ({
     height: 50,
   },
 }));
-
 export default Footer;
