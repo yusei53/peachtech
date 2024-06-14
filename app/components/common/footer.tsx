@@ -2,7 +2,6 @@
 import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Box, Link, Typography, styled } from "@mui/material";
-import React from "react";
 import Image from "next/image";
 
 const Footer = () => {
