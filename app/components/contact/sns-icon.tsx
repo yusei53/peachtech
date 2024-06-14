@@ -5,7 +5,7 @@ import { snsData } from "@/app/const/sns";
 import CustomLink from "../common/custom-link";
 import Image from "next/image";
 
-const SnsIcon = () => {
+const SnsIconArea = () => {
   return (
     <Box py={{ sx: 2, md: 3 }} px={{ xs: 5, md: 20 }}>
       <Heading title="各種SNS" />
@@ -29,7 +29,7 @@ const SnsIcon = () => {
               >
                 <SImage
                   src={data.src}
-                  alt="green iguana"
+                  alt="snsのアイコン"
                   width={200}
                   height={200}
                 />
@@ -53,4 +53,4 @@ const SImage = styled(Image)(({ theme }) => ({
   },
 }));
 
-export default SnsIcon;
+export default SnsIconArea;
