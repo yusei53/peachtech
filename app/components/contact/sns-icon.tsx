@@ -1,5 +1,5 @@
 "use client";
-import { Box, Link, Grid, Card, CardMedia, styled } from "@mui/material";
+import { Box, Grid, styled } from "@mui/material";
 import Heading from "../common/heading";
 import { snsData } from "@/app/const/sns";
 import CustomLink from "../common/custom-link";
