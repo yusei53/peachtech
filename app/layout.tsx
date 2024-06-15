@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "./components/common/header";
+import Footer from "./components/common/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body style={{ margin: 0 }}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
