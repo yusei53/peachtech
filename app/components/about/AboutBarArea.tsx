@@ -8,10 +8,14 @@ type Tprops = {
   description: string;
 };
 
-const AboutBarArea: React.FC<Tprops> = ({ title, subTitle, description }) => {
+export const AboutBarArea: React.FC<Tprops> = ({
+  title,
+  subTitle,
+  description,
+}) => {
   return (
     <Box display={"flex"} alignItems={"center"} py={10} px={{ xs: 4, md: 25 }}>
-      <Grid container display={"flex"} spacing={{ xs: 0, sm: 3 }}>
+      <Grid container display={"flex"} spacing={{ sm: 3 }}>
         <Grid item xs={12} md={4}>
           <Heading title={title} />
         </Grid>
