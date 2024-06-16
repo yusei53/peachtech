@@ -1,7 +1,13 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
 import Heading from "../common/heading";
+import { FunctionComponent } from "react";
 
-const Vision = () => {
+type Props = {
+  title: string;
+  text: string;
+};
+
+export const AboutBarArea: FunctionComponent<Props> = (props) => {
   return (
     <Box display={"flex"} alignItems={"center"} py={10} px={{ xs: 4, md: 25 }}>
       <Grid container display={"flex"} spacing={{ xs: 0, sm: 3 }}>
@@ -22,7 +28,7 @@ const Vision = () => {
             fontWeight={"bold"}
             fontSize={{ xs: 18, sm: 26 }}
           >
-            Vision
+            {props.title}
           </Typography>
           <Typography
             fontSize={{
@@ -31,10 +37,7 @@ const Vision = () => {
             }}
             letterSpacing={0.8}
           >
-            PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観
-            PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観
-            PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観
-            PeachTechの価値観PeachTechの価値観PeachTechの価値観
+            {props.text}
           </Typography>
         </Grid>
       </Grid>
@@ -42,4 +45,4 @@ const Vision = () => {
   );
 };
 
-export default Vision;
+export default AboutBarArea;
