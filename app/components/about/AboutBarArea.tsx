@@ -4,11 +4,11 @@ import { FunctionComponent } from "react";
 
 type Tprops = {
   title: string;
-  subtitle: string;
-  text: string;
+  subTitle: string;
+  description: string;
 };
 
-const AboutBarArea: React.FC<Tprops> = ({ title, subtitle, text }) => {
+const AboutBarArea: React.FC<Tprops> = ({ title, subTitle, description }) => {
   return (
     <Box display={"flex"} alignItems={"center"} py={10} px={{ xs: 4, md: 25 }}>
       <Grid container display={"flex"} spacing={{ xs: 0, sm: 3 }}>
@@ -29,7 +29,7 @@ const AboutBarArea: React.FC<Tprops> = ({ title, subtitle, text }) => {
             fontWeight={"bold"}
             fontSize={{ xs: 18, sm: 26 }}
           >
-            {subtitle}
+            {subTitle}
           </Typography>
           <Typography
             fontSize={{
@@ -38,7 +38,7 @@ const AboutBarArea: React.FC<Tprops> = ({ title, subtitle, text }) => {
             }}
             letterSpacing={0.8}
           >
-            {text}
+            {description}
           </Typography>
         </Grid>
       </Grid>

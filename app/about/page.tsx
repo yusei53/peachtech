@@ -7,10 +7,10 @@ const page = () => {
       <SubHeader />
       <AboutBarArea
         title={"Vision"}
-        text={
+        subTitle={"Vision"}
+        description={
           "PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観"
         }
-        subtitle={"Vision"}
       />
     </>
   );
