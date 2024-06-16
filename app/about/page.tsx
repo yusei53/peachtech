@@ -1,12 +1,11 @@
-import * as React from "react";
 import SubHeader from "../components/about/subheader";
-import Vision from "../components/about/vision";
+import AboutBarArea from "../components/about/AboutBarArea";
 
 const page = () => {
   return (
     <>
       <SubHeader />
-      <Vision />
+      <AboutBarArea />
     </>
   );
 };
