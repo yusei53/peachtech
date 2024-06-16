@@ -5,7 +5,12 @@ const page = () => {
   return (
     <>
       <SubHeader />
-      <AboutBarArea />
+      <AboutBarArea
+        title={"Vision"}
+        text={
+          "PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観"
+        }
+      />
     </>
   );
 };
