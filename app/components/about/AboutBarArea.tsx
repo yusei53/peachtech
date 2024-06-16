@@ -2,17 +2,18 @@ import { Box, Divider, Grid, Typography } from "@mui/material";
 import Heading from "../common/heading";
 import { FunctionComponent } from "react";
 
-type Props = {
+type Tprops = {
   title: string;
+  subtitle: string;
   text: string;
 };
 
-export const AboutBarArea: FunctionComponent<Props> = (props) => {
+const AboutBarArea: React.FC<Tprops> = ({ title, subtitle, text }) => {
   return (
     <Box display={"flex"} alignItems={"center"} py={10} px={{ xs: 4, md: 25 }}>
       <Grid container display={"flex"} spacing={{ xs: 0, sm: 3 }}>
         <Grid item xs={12} md={4}>
-          <Heading title="Vision" />
+          <Heading title={title} />
         </Grid>
         <Grid
           item
@@ -28,7 +29,7 @@ export const AboutBarArea: FunctionComponent<Props> = (props) => {
             fontWeight={"bold"}
             fontSize={{ xs: 18, sm: 26 }}
           >
-            {props.title}
+            {subtitle}
           </Typography>
           <Typography
             fontSize={{
@@ -37,7 +38,7 @@ export const AboutBarArea: FunctionComponent<Props> = (props) => {
             }}
             letterSpacing={0.8}
           >
-            {props.text}
+            {text}
           </Typography>
         </Grid>
       </Grid>
