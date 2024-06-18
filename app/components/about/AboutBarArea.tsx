@@ -1,6 +1,5 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import Heading from "../common/heading";
-import { FunctionComponent } from "react";
 
 type Tprops = {
   title: string;
