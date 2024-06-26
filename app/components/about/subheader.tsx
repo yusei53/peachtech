@@ -1,11 +1,11 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
 
-type Tprops = {
+type TProps = {
   title: string;
   description: string;
 };
 
-export const SubHeader: React.FC<Tprops> = ({ title, description }) => {
+export const SubHeader: React.FC<TProps> = ({ title, description }) => {
   return (
     <Box
       display={"flex"}
