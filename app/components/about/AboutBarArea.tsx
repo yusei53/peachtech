@@ -1,24 +1,18 @@
 import { Box, Grid, Typography } from "@mui/material";
 import Heading from "../common/heading";
+import { aboutDataProps } from "@/app/const/about-page-data";
 
-type Tprops = {
+type TProps = {
   title: string;
-  subTitle: string;
-  description: string;
-  displayValues: boolean;
+  aboutPageData: aboutDataProps[];
 };
 
-export const AboutBarArea: React.FC<Tprops> = ({
-  title,
-  subTitle,
-  description,
-  displayValues,
-}) => {
+const AboutBarArea: React.FC<TProps> = ({ title, aboutPageData }) => {
   return (
-    <Box display={"flex"} alignItems={"center"} py={10} px={{ xs: 4, md: 25 }}>
-      <Grid container display={"flex"} spacing={{ sm: 3 }}>
+    <Box display={"flex"} alignItems={"center"} pt={10} px={{ xs: 4, md: 20 }}>
+      <Grid container display={"flex"} spacing={{ sm: 10 }}>
         <Grid item xs={12} md={4}>
-          {displayValues && <Heading title={title} />}
+          {<Heading title={title} />}
         </Grid>
         <Grid
           item
@@ -29,22 +23,26 @@ export const AboutBarArea: React.FC<Tprops> = ({
           flexDirection={"column"}
           px={{ xs: 2, md: 10 }}
         >
-          <Typography
-            component="h3"
-            fontWeight={"bold"}
-            fontSize={{ xs: 18, sm: 26 }}
-          >
-            {subTitle}
-          </Typography>
-          <Typography
-            fontSize={{
-              xs: 12,
-              md: 16,
-            }}
-            letterSpacing={0.8}
-          >
-            {description}
-          </Typography>
+          {aboutPageData.map((value: aboutDataProps) => (
+            <Box pb={10} key={value.subTitle}>
+              <Typography
+                component="h3"
+                fontWeight={"bold"}
+                fontSize={{ xs: 18, sm: 26 }}
+              >
+                {value.subTitle}
+              </Typography>
+              <Typography
+                fontSize={{
+                  xs: 12,
+                  md: 16,
+                }}
+                letterSpacing={0.8}
+              >
+                {value.description}
+              </Typography>
+            </Box>
+          ))}
         </Grid>
       </Grid>
     </Box>
