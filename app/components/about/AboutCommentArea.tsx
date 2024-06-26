@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 
 type TProps = {
@@ -8,56 +8,42 @@ type TProps = {
 
 const AboutCommentArea: React.FC<TProps> = ({ title, comment }) => {
   return (
-    <Box display="flex" justifyContent={"center"} alignItems="center">
+    <Box
+      display={"flex"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      px={{ xs: 5, md: 45 }}
+    >
       <Box
-        height={{ xs: 350, sm: 200 }}
-        width={{ xs: 250, sm: 800 }}
         my={4}
-        display="flex"
+        display={"flex"}
+        flexDirection={{ xs: "column", md: "row" }}
         justifyContent={"center"}
-        alignItems="center"
-        p={5}
-        sx={{ border: "1px solid grey" }}
+        alignItems={"center"}
+        py={{ xs: 2, md: 8 }}
+        px={{ xs: 2, md: 10 }}
+        border={"1px solid grey"}
       >
-        <Grid
-          container
-          display={"flex"}
-          justifyContent={"flex-end"}
-          spacing={5}
-        >
-          <Grid item xs={12} md={3}>
-            <Box display={"flex"} justifyContent={"center"} alignItems="center">
-              <Image src="/peachtech.png" alt="logo" width={180} height={180} />
-            </Box>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            md={9}
-            display={"flex"}
-            justifyContent={"center"}
-            flexDirection={"column"}
-            px={{ xs: 1, md: 5 }}
+        <Box display={"flex"} alignItems={"center"} mr={{ xs: 0, md: 8 }}>
+          <Image src="/peachtech.png" alt="logo" width={180} height={180} />
+        </Box>
+        <Box>
+          <Typography
+            component={"h3"}
+            fontWeight={"bold"}
+            fontSize={{ xs: 18, sm: 26 }}
+            mb={2}
           >
-            <Typography
-              component="h3"
-              fontWeight={"bold"}
-              fontSize={{ xs: 18, sm: 26 }}
-            >
-              {title}
-            </Typography>
-            <Typography
-              fontSize={{
-                xs: 12,
-                md: 16,
-              }}
-              letterSpacing={0.8}
-              fontWeight={"bold"}
-            >
-              {comment}
-            </Typography>
-          </Grid>
-        </Grid>
+            {title}
+          </Typography>
+          <Typography
+            fontSize={{ xs: 12, md: 16 }}
+            letterSpacing={0.8}
+            fontWeight={"bold"}
+          >
+            {comment}
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
