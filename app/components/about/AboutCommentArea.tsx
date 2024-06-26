@@ -12,7 +12,7 @@ const AboutCommentArea: React.FC<TProps> = ({ title, comment }) => {
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
-      px={{ xs: 5, md: 45 }}
+      px={{ xs: 5, md: 35 }}
     >
       <Box
         my={4}
@@ -20,11 +20,11 @@ const AboutCommentArea: React.FC<TProps> = ({ title, comment }) => {
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent={"center"}
         alignItems={"center"}
-        py={{ xs: 2, md: 8 }}
+        py={{ xs: 2, md: 10 }}
         px={{ xs: 2, md: 10 }}
         border={"1px solid grey"}
       >
-        <Box display={"flex"} alignItems={"center"} mr={{ xs: 0, md: 8 }}>
+        <Box display={"flex"} alignItems={"center"} mr={{ xs: 0, md: 5 }}>
           <Image src="/peachtech.png" alt="logo" width={180} height={180} />
         </Box>
         <Box>
