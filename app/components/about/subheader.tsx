@@ -25,7 +25,6 @@ export const SubHeader: React.FC<TProps> = ({ title, description }) => {
         <Grid item xs={12} md={4}>
           <Typography fontSize={{ xs: 22, md: 25 }} fontWeight={"bold"}>
             {title}
-            PeachTechの価値観
           </Typography>
           <Divider
             sx={{
