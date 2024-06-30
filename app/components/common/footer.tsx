@@ -14,13 +14,14 @@ const Footer = () => {
       flexDirection={"column"}
       px={{ xs: 10, md: 22 }}
       pt={3}
-      pb={15}
+      pb={{ xs: 10, md: 15 }}
     >
       <SImage src="/peachtech.png" alt="logo" width={60} height={60} />
       <Box
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent={"space-between"}
+        gap={5}
       >
         <Box>
           <FooterTitle>Peach Tech</FooterTitle>
