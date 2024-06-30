@@ -12,7 +12,7 @@ const AboutMessageArea: React.FC<TProps> = ({ title, comment }) => {
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
-      px={{ xs: 5, md: 35 }}
+      px={{ xs: 5, md: 30 }}
     >
       <Box
         my={4}
@@ -20,26 +20,22 @@ const AboutMessageArea: React.FC<TProps> = ({ title, comment }) => {
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent={"center"}
         alignItems={"center"}
-        p={{ xs: 2, md: 10 }}
-        border={"1px solid grey"}
+        border={"1px solid #E6E6E6"}
+        p={{ xs: 2, md: 9 }}
       >
-        <Box display={"flex"} alignItems={"center"} mr={{ md: 5 }}>
-          <Image src="/peachtech.png" alt="logo" width={180} height={180} />
+        <Box display={"flex"} alignItems={"center"} mr={{ md: 4 }}>
+          <Image src="/peachtech.png" alt="logo" width={120} height={120} />
         </Box>
         <Box>
           <Typography
             component={"h3"}
             fontWeight={"bold"}
-            fontSize={{ xs: 18, sm: 26 }}
-            mb={2}
+            fontSize={{ xs: 18, sm: 21 }}
+            mb={1}
           >
             {title}
           </Typography>
-          <Typography
-            fontSize={{ xs: 12, md: 16 }}
-            letterSpacing={0.8}
-            fontWeight={"bold"}
-          >
+          <Typography fontSize={{ xs: 12, md: 15 }} letterSpacing={0.8}>
             {comment}
           </Typography>
         </Box>
