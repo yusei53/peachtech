@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const SnsIconArea = () => {
   return (
-    <Box py={{ sx: 2, md: 3 }} px={{ xs: 5, md: 20 }}>
+    <Box mb={10} px={{ xs: 5, md: 20 }}>
       <Heading title="各種SNS" />
-      <Grid container spacing={3} pt={5} px={{ xs: 10, md: 3 }}>
+      <Grid container spacing={3} pt={5} px={20}>
         {snsData.map((data) => (
           <Grid
             key={data.src}
@@ -30,8 +30,8 @@ const SnsIconArea = () => {
                 <SImage
                   src={data.src}
                   alt="snsのアイコン"
-                  width={200}
-                  height={200}
+                  width={160}
+                  height={160}
                 />
               </Box>
             </CustomLink>
