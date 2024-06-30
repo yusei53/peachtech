@@ -1,6 +1,6 @@
 import SubHeader from "../components/about/subheader";
 import AboutBarArea from "../components/about/about-bar-area";
-import AboutMessageArea from "../components/about/AboutMessageArea";
+import AboutMessageArea from "../components/about/about-message-area";
 import { missionData, visionData, valueData } from "../const/about-page-data";
 
 const page = () => {
