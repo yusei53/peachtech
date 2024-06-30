@@ -34,6 +34,7 @@ const AboutBarArea: React.FC<TProps> = ({ title, aboutPageData }) => {
                   md: 15,
                 }}
                 letterSpacing={0.8}
+                mt={1}
               >
                 {value.description}
               </Typography>

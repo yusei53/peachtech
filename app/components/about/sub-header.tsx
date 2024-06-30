@@ -23,13 +23,11 @@ export const SubHeader: React.FC<TProps> = ({ title, description }) => {
     >
       <Grid container display={"flex"} justifyContent={"flex-end"} spacing={5}>
         <Grid item xs={12} md={4}>
-          <Typography fontSize={{ xs: 22, md: 25 }} fontWeight={"bold"}>
-            {title}
-          </Typography>
+          <Typography fontSize={{ xs: 22, md: 25 }}>{title}</Typography>
           <Divider
             sx={{
               backgroundColor: "#FF539B",
-              width: { xs: 190, md: 210 },
+              width: 220,
               height: 3,
             }}
           />
@@ -41,7 +39,6 @@ export const SubHeader: React.FC<TProps> = ({ title, description }) => {
               md: 16,
             }}
             letterSpacing={0.8}
-            fontWeight={"bold"}
           >
             {description}
           </Typography>
