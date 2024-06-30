@@ -12,16 +12,15 @@ const Footer = () => {
       display={"flex"}
       justifyContent={{ xs: "flex-start", sm: "center" }}
       flexDirection={"column"}
-      px={{ xs: 10, md: 25 }}
-      pt={5}
-      pb={10}
+      px={{ xs: 10, md: 22 }}
+      pt={3}
+      pb={15}
     >
       <SImage src="/peachtech.png" alt="logo" width={60} height={60} />
       <Box
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent={"space-between"}
-        gap={5}
       >
         <Box>
           <FooterTitle>Peach Tech</FooterTitle>
@@ -30,8 +29,20 @@ const Footer = () => {
             東京都武蔵野市吉祥寺北町３丁目３−１
           </FooterText>
         </Box>
-        <Box>
+        <Box display={"flex"} flexDirection={"column"}>
           <FooterTitle>Contact Us</FooterTitle>
+          <CustomLink
+            href="/"
+            rel
+            underline="none"
+            sx={{
+              color: "gray",
+              fontSize: { xs: 12, md: 15 },
+              cursor: "pointer",
+            }}
+          >
+            参加フォーム
+          </CustomLink>
           <CustomLink
             href="/"
             rel
@@ -94,15 +105,15 @@ const SImage = styled(Image)(({ theme }) => ({
 }));
 
 const FooterTitle = styled(Typography)(({ theme }) => ({
-  fontSize: 18,
-  marginBottom: 5,
+  fontSize: 19,
+  marginBottom: 2,
   [theme.breakpoints.down("sm")]: {
     fontSize: 12,
   },
 }));
 
 const FooterText = styled(Typography)(({ theme }) => ({
-  fontSize: 15,
+  fontSize: 14,
   color: "gray",
   [theme.breakpoints.down("sm")]: {
     fontSize: 10,
