@@ -1,4 +1,4 @@
-import SubHeader from "../components/about/subheader";
+import SubHeader from "../components/about/sub-header";
 import AboutBarArea from "../components/about/about-bar-area";
 import AboutMessageArea from "../components/about/about-message-area";
 import { missionData, visionData, valueData } from "../const/about-page-data";
