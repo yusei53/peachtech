@@ -1,6 +1,11 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
 
-const SubHeader = () => {
+type TProps = {
+  title: string;
+  description: string;
+};
+
+export const SubHeader: React.FC<TProps> = ({ title, description }) => {
   return (
     <Box
       display={"flex"}
@@ -19,7 +24,7 @@ const SubHeader = () => {
       <Grid container display={"flex"} justifyContent={"flex-end"} spacing={5}>
         <Grid item xs={12} md={4}>
           <Typography fontSize={{ xs: 22, md: 25 }} fontWeight={"bold"}>
-            PeachTechの価値観
+            {title}
           </Typography>
           <Divider
             sx={{
@@ -38,11 +43,7 @@ const SubHeader = () => {
             letterSpacing={0.8}
             fontWeight={"bold"}
           >
-            PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観
-            PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観
-            PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観
-            PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観
-            PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観
+            {description}
           </Typography>
         </Grid>
       </Grid>
