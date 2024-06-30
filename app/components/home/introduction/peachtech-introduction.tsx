@@ -4,7 +4,7 @@ import { Box, Typography, styled } from "@mui/material";
 import { isPeachTechText } from "../../../const/documents";
 import Heading from "../../common/heading";
 
-const Activity = () => {
+const PeachTechIntroduction = () => {
   return (
     <>
       <Box display="flex" flexDirection="column" alignItems="center" mt={10}>
@@ -29,7 +29,7 @@ const Activity = () => {
             xs: "center",
             sm: text.number === "01" ? "flex-start" : "flex-end",
           }}
-          mx={{ sm: 15 }}
+          mx={{ sm: 18 }}
         >
           <StyledCircle>
             <Box px={{ xs: 5, sm: 10 }}>
@@ -54,7 +54,7 @@ const Activity = () => {
   );
 };
 
-export default Activity;
+export default PeachTechIntroduction;
 
 const StyledCircle = styled("div")(({ theme }) => ({
   width: 580,

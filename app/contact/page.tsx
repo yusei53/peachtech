@@ -1,6 +1,6 @@
 import FormBar from "../components/contact/form-bar";
 import SnsIconArea from "../components/contact/sns-icon";
-import FAQArea from "../components/FAQ-area";
+import FAQArea from "../components/contact/FAQ-area";
 
 const page = () => {
   return (

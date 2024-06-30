@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import { Box } from "@mui/material";
-import Heading from "./common/heading";
-import { accordionContentData } from "../const/accordion-contene-data";
-import AccordionBar from "./contact/accordion-bar";
+import Heading from "../common/heading";
+import { accordionContentData } from "../../const/accordion-contene-data";
+import AccordionBar from "./accordion-bar";
 
 const FAQArea = () => {
   return (

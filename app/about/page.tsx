@@ -1,12 +1,13 @@
-import SubHeader from "../components/about/subheader";
-import AboutBarArea from "../components/about/AboutBarArea";
-import AboutMessageArea from "../components/about/AboutMessageArea";
+import SubHeader from "../components/about/sub-header";
+import AboutBarArea from "../components/about/about-bar-area";
+import AboutMessageArea from "../components/about/about-message-area";
 import { missionData, visionData, valueData } from "../const/about-page-data";
 
 const page = () => {
   return (
     <>
       <SubHeader
+        // なんかの英単語に変える
         title={"PeachTechの価値観"}
         description={
           " PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観"
@@ -18,7 +19,7 @@ const page = () => {
       <AboutMessageArea
         title={"代表からのメッセージ"}
         comment={
-          "PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観"
+          "PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観"
         }
       />
     </>
