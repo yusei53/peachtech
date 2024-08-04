@@ -26,8 +26,8 @@ export const valueData: aboutDataProps[] = [
       "一人で淡々とプログラミングをするだけではこのコミュニティへの参加を活かしきれていません。PeachTechでは、コミュニティ内で皆が一体となって課題解決や社会問題に向き合うことにこそ価値があります。メンバーは互いにサポートし合いながら、学生のうちから多様な経験と知識を得ることで未来に向け自信とスキルを身につけます",
   },
   {
-    subTitle: "Value2",
+    subTitle: "個性と強みを活かす",
     description:
-      "PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観",
+      "エンジニアにとって、コードを書くことやプログラミングができることが全てではありません。技術的に優れる者、ユーザー目線で最良の機能を考える者、プレゼンテーションで伝える力を持つ者、チームをマネジメントする力を持つ者、行動力がある者、それぞれが異なる強みを持っています。これらの個性と強みが集結することで、私たちは大きな目標を成し遂げるため日々挑戦しています。",
   },
 ];
