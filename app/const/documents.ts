@@ -1,5 +1,3 @@
-import { sliderClasses } from "@mui/material";
-
 export const isPeachTechText = [
   {
     number: "01",
