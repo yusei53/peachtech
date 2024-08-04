@@ -21,9 +21,9 @@ export const missionData: aboutDataProps[] = [
 
 export const valueData: aboutDataProps[] = [
   {
-    subTitle: "Value1",
+    subTitle: "7人8脚の精神",
     description:
-      "PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観PeachTechの価値観",
+      "一人で淡々とプログラミングをするだけではこのコミュニティへの参加を活かしきれていません。PeachTechでは、コミュニティ内で皆が一体となって課題解決や社会問題に向き合うことにこそ価値があります。メンバーは互いにサポートし合いながら、学生のうちから多様な経験と知識を得ることで未来に向け自信とスキルを身につけます",
   },
   {
     subTitle: "Value2",
