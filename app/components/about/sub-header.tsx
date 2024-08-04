@@ -29,6 +29,7 @@ export const SubHeader: React.FC<TProps> = ({ title, description }) => {
               backgroundColor: "#FF539B",
               width: 170,
               height: 3,
+              borderRadius: 0.5,
             }}
           />
         </Grid>
