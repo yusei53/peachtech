@@ -27,7 +27,7 @@ export const SubHeader: React.FC<TProps> = ({ title, description }) => {
           <Divider
             sx={{
               backgroundColor: "#FF539B",
-              width: 220,
+              width: 170,
               height: 3,
             }}
           />
