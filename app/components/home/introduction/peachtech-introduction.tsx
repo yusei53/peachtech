@@ -35,7 +35,7 @@ const PeachTechIntroduction = () => {
           justifyContent={"center"}
           flexDirection={text.number == "02" ? "row-reverse" : "row"}
           mx={5}
-          py={5}
+          py={{ xs: 2, sm: 5 }}
         >
           <Box mx={{ sm: 5 }} order={{ xs: 2, sm: 1 }}>
             <StyledCircle>
