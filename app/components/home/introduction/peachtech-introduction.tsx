@@ -8,14 +8,19 @@ import Image from "next/image";
 const PeachTechIntroduction = () => {
   return (
     <>
-      <Box display="flex" flexDirection="column" alignItems="center" mt={10}>
-        <Heading title="PeachTechとは" />
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        alignItems={"center"}
+        mt={10}
+      >
+        <Heading title={"PeachTechとは"} />
         <Typography
-          whiteSpace="pre-wrap"
+          whiteSpace={"pre-wrap"}
           my={5}
           px={{ xs: 4, sm: 0 }}
           fontSize={{ xs: 10, sm: 16 }}
-          textAlign="center"
+          textAlign={"center"}
         >
           Peach.Techは、成蹊大学の大学公認のプログラミングサークルです。
           <br />
@@ -25,9 +30,9 @@ const PeachTechIntroduction = () => {
       {isPeachTechText.map((text) => (
         <Box
           key={text.number}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
           flexDirection={text.number == "02" ? "row-reverse" : "row"}
           mx={5}
           py={5}
@@ -36,15 +41,15 @@ const PeachTechIntroduction = () => {
             <StyledCircle>
               <Box px={{ xs: 5, sm: 10 }}>
                 <Typography
-                  color="#E7EEF4"
+                  color={"#E7EEF4"}
                   pt={5}
                   fontSize={{ xs: 40, sm: 75 }}
                 >
                   {text.number}
                 </Typography>
                 <Typography
-                  component="h3"
-                  whiteSpace="pre-wrap"
+                  component={"h3"}
+                  whiteSpace={"pre-wrap"}
                   fontSize={{ xs: 20, sm: 30 }}
                 >
                   {text.title}
@@ -62,8 +67,8 @@ const PeachTechIntroduction = () => {
           >
             <Image
               src={text.src}
-              alt="Picture of the author"
-              layout="responsive"
+              alt={"Picture of the author"}
+              layout={"responsive"}
               width={350}
               height={350}
             />
