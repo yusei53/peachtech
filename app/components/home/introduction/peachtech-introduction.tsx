@@ -63,7 +63,7 @@ const PeachTechIntroduction = () => {
           <Box
             order={{ xs: 1, sm: 2 }}
             mb={{ xs: 4, sm: 0 }}
-            sx={{ display: { xs: "none", sm: "block" } }}
+            display={{ xs: "none", sm: "block" }}
           >
             <Image
               src={text.src}
