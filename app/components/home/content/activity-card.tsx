@@ -7,9 +7,18 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
   content,
 }) => {
   return (
-    <Card sx={{ width: {xs: "140px", sm: "260px"}, height: "100%", display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <Box sx={{width: "100px", marginX: 3, marginTop: 3}}>
-        <CardMedia component="img" image={src} alt="green iguana" />
+    <Card
+      sx={{
+        height: { xs: "200px", sm: "250px" },
+        aspectRatio: "6 / 7",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        borderRadius: 4,
+      }}
+    >
+      <Box width={{ xs: "70px", sm: "100px" }} mx={3} mt={3}>
+        <CardMedia component="img" image={src} alt={title} />
       </Box>
       <CardContent
         sx={{
@@ -27,7 +36,7 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
         >
           {title}
         </Typography>
-        <Typography fontSize={{ xs: 12, md: 15 }}>{content}</Typography>
+        <Typography fontSize={{ xs: 10, md: 13 }}>{content}</Typography>
       </CardContent>
     </Card>
   );
