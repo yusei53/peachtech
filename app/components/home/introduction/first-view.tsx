@@ -8,7 +8,15 @@ import "swiper/css/navigation";
 import Image from "next/image";
 
 const FirstView = () => {
-  const images = ["/640x480.png", "/640x480.png"];
+  const images = [
+    "/home1.jpg",
+    "/home2.png",
+    "/home3.jpg",
+    "/home4.jpg",
+    "/home5.png",
+    "/home6.jpg",
+    "/home7.jpg",
+  ];
 
   return (
     <Box
