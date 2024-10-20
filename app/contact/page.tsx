@@ -18,7 +18,8 @@ const page = () => {
         description="気になることや、企業様からのお問い合わせはこちらです"
       />
       <FAQArea />
-      <SnsIconArea />
+      {/* sns周りなしの方が綺麗かも */}
+      {/* <SnsIconArea /> */}
     </>
   );
 };
