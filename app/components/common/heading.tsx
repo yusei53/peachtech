@@ -1,10 +1,10 @@
 import { Box, Typography } from "@mui/material";
 
-type Tprops = {
+type TProps = {
   title: string;
 };
 
-const Heading: React.FC<Tprops> = ({ title }) => {
+const Heading: React.FC<TProps> = ({ title }) => {
   return (
     <Box
       display={"flex"}
@@ -12,7 +12,7 @@ const Heading: React.FC<Tprops> = ({ title }) => {
       justifyContent={"center"}
       flexDirection={"column"}
     >
-      <Typography component="h3" fontSize={{ xs: 20, sm: 26 }} pb={0.5}>
+      <Typography component="h3" fontSize={{ xs: 20, sm: 25 }} pb={0.3}>
         {title}
       </Typography>
       <Box

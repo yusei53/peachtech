@@ -13,7 +13,7 @@ const Header = () => {
             sx={{ cursor: "pointer", display: "flex", alignItems: "center" }}
           >
             <Image src="/peachtech.png" alt="logo" width={50} height={50} />
-            <Typography color={"black"} fontSize={22}>
+            <Typography color={"black"} fontSize={{ xs: 18, md: 22 }}>
               PeachTech
             </Typography>
           </Link>
