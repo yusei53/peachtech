@@ -5,11 +5,18 @@ const Header = () => {
   return (
     <AppBar position="static" color="inherit" sx={{ bgcolor: "white" }}>
       <Toolbar>
-        <Box flexGrow={1} display={"flex"} alignItems={"center"}>
-          <Image src="/peachtech.png" alt="logo" width={50} height={50} />
-          <Typography color={"black"} fontSize={22}>
-            PeachTech
-          </Typography>
+        <Box flexGrow={1}>
+          <Link
+            href="/"
+            underline="none"
+            color={"black"}
+            sx={{ cursor: "pointer", display: "flex", alignItems: "center" }}
+          >
+            <Image src="/peachtech.png" alt="logo" width={50} height={50} />
+            <Typography color={"black"} fontSize={22}>
+              PeachTech
+            </Typography>
+          </Link>
         </Box>
         <Link
           href="/"

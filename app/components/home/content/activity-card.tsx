@@ -1,5 +1,6 @@
 import { Card, CardMedia, CardContent, Typography, Box } from "@mui/material";
 import { activityContentDataProps } from "../../../const/activity-content-data";
+import Image from "next/image";
 
 const ActivityCard: React.FC<activityContentDataProps> = ({
   src,
@@ -9,16 +10,16 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
   return (
     <Card
       sx={{
-        height: { xs: "200px", sm: "250px" },
-        aspectRatio: "6 / 7",
+        height: 220,
+        minWidth: { xs: 150, sm: 200 },
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         borderRadius: 4,
       }}
     >
-      <Box width={{ xs: "70px", sm: "100px" }} mx={3} mt={3}>
-        <CardMedia component="img" image={src} alt={title} />
+      <Box mx={3} mt={3}>
+        <Image src={src} alt={title} width={80} height={80} />
       </Box>
       <CardContent
         sx={{
@@ -31,12 +32,12 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
         <Typography
           gutterBottom
           textAlign={"center"}
-          fontSize={{ xs: 16, md: 20 }}
+          fontSize={16}
           whiteSpace={"nowrap"}
         >
           {title}
         </Typography>
-        <Typography fontSize={{ xs: 10, md: 13 }}>{content}</Typography>
+        <Typography fontSize={{ xs: 10, md: 12 }}>{content}</Typography>
       </CardContent>
     </Card>
   );

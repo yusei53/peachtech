@@ -24,7 +24,7 @@ const PeachTechIntroduction = () => {
         >
           Peach.Techは、成蹊大学の大学公認のプログラミングサークルです。
           <br />
-          成蹊のエンジニア同士で繋がることができる場所を目指しています。仮の文章。
+          成蹊のエンジニア同士で繋がることができる場所を目指しています。
         </Typography>
       </Box>
       {isPeachTechText.map((text) => (
@@ -50,11 +50,15 @@ const PeachTechIntroduction = () => {
                 <Typography
                   component={"h3"}
                   whiteSpace={"pre-wrap"}
-                  fontSize={{ xs: 20, sm: 30 }}
+                  fontSize={{ xs: 18, sm: 22 }}
                 >
                   {text.title}
                 </Typography>
-                <Typography fontSize={{ xs: 10, sm: 16 }} py={{ xs: 2, sm: 4 }}>
+                <Typography
+                  fontSize={{ xs: 10, sm: 16 }}
+                  py={2}
+                  letterSpacing={1}
+                >
                   {text.description}
                 </Typography>
               </Box>
@@ -69,8 +73,8 @@ const PeachTechIntroduction = () => {
               src={text.src}
               alt={"Picture of the author"}
               layout={"responsive"}
-              width={350}
-              height={350}
+              width={375}
+              height={375}
             />
           </Box>
         </Box>
@@ -82,8 +86,8 @@ const PeachTechIntroduction = () => {
 export default PeachTechIntroduction;
 
 const StyledCircle = styled("div")(({ theme }) => ({
-  width: 630,
-  height: 630,
+  width: 530,
+  height: 530,
   backgroundColor: "#FFF4FC",
   borderRadius: "50%",
   [theme.breakpoints.down("sm")]: {
