@@ -36,8 +36,8 @@ export const SubHeader: React.FC<TProps> = ({ title, description }) => {
         <Grid item xs={12} md={8}>
           <Typography
             fontSize={{
-              xs: 11,
-              md: 13,
+              xs: 13,
+              md: 14,
             }}
             letterSpacing={0.8}
           >

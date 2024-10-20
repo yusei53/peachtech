@@ -31,9 +31,9 @@ const FirstView = () => {
         pt={15}
         fontSize={{ xs: 20, md: 28 }}
       >
-        明日を創造する
+        ここにthree.js
         <br />
-        第一歩をともに
+        持ってきたいね
       </Typography>
       <Box
         width={{ xs: "100%", md: "65%" }}
@@ -50,7 +50,7 @@ const FirstView = () => {
           pagination={{
             clickable: true,
           }}
-          style={{ width: "100%", height: "100%", borderRadius: "10px" }}
+          style={{ width: "100%", height: "100%" }}
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
@@ -58,7 +58,7 @@ const FirstView = () => {
                 fill
                 src={src}
                 alt={`Slide ${index}`}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", borderRadius: 4 }}
               />
             </SwiperSlide>
           ))}

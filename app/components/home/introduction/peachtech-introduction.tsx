@@ -50,12 +50,12 @@ const PeachTechIntroduction = () => {
                 <Typography
                   component={"h3"}
                   whiteSpace={"pre-wrap"}
-                  fontSize={{ xs: 18, sm: 22 }}
+                  fontSize={{ xs: 18, sm: 20 }}
                 >
                   {text.title}
                 </Typography>
                 <Typography
-                  fontSize={{ xs: 10, sm: 16 }}
+                  fontSize={{ xs: 11, sm: 14 }}
                   py={2}
                   letterSpacing={1}
                 >

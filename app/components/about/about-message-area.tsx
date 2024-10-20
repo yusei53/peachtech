@@ -30,12 +30,18 @@ const AboutMessageArea: React.FC<TProps> = ({ title, comment }) => {
           <Typography
             component={"h3"}
             fontWeight={"bold"}
-            fontSize={{ xs: 18, sm: 21 }}
+            fontSize={{ xs: 18, sm: 20 }}
             mb={1}
           >
             {title}
           </Typography>
-          <Typography fontSize={{ xs: 12, md: 15 }} letterSpacing={0.8}>
+          <Typography
+            fontSize={{
+              xs: 13,
+              md: 14,
+            }}
+            letterSpacing={0.8}
+          >
             {comment}
           </Typography>
         </Box>

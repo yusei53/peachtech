@@ -42,8 +42,8 @@ const AboutBarArea: React.FC<TProps> = ({ title, aboutPageData }) => {
               </Typography>
               <Typography
                 fontSize={{
-                  xs: 11,
-                  md: 13,
+                  xs: 13,
+                  md: 14,
                 }}
                 letterSpacing={0.8}
                 mt={1}
