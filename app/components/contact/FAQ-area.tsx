@@ -6,9 +6,14 @@ import AccordionBar from "./accordion-bar";
 
 const FAQArea = () => {
   return (
-    <Box display="flex" flexDirection={"column"} alignItems={"center"} py={10}>
+    <Box
+      display="flex"
+      flexDirection={"column"}
+      alignItems={"center"}
+      py={{ xs: 6, sm: 10 }}
+    >
       <Heading title="よくある質問" />
-      <Box width={"70%"} py={5}>
+      <Box width={{ xs: "80%", sm: "70%" }} py={5}>
         {accordionContentData.map((data) => (
           <Fragment key={data.accordionTitle}>
             <AccordionBar
