@@ -12,7 +12,6 @@ const PeachTechIntroduction = () => {
         display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
-        mt={10}
       >
         <Heading title={"PeachTechとは"} />
         <Typography
