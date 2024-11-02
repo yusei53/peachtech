@@ -1,11 +1,13 @@
 "use client";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
+import * as THREE from "three";
+import Three from "./three";
 
 const FirstView = () => {
   const images = [
@@ -20,24 +22,23 @@ const FirstView = () => {
 
   return (
     <Box
+      position={"relative"}
       display={"flex"}
       alignItems={"center"}
       flexDirection={{ xs: "column-reverse", md: "row" }}
-      my={{ md: 5 }}
+      height={"100vh"}
+      mt={{ md: 5 }}
     >
-      <Typography
-        component="h2"
-        px={{ md: 5, lg: 10 }}
-        pt={15}
-        fontSize={{ xs: 20, md: 28 }}
-      >
-        ここにthree.js
-        <br />
-        持ってきたいね
-      </Typography>
+      <Box position={"absolute"} top={70} zIndex={200}>
+        <Three />
+      </Box>
+
       <Box
-        width={{ xs: "100%", md: "65%" }}
-        height={{ xs: "40vh", md: "70vh" }}
+        position={"absolute"}
+        top={60}
+        right={40}
+        width={{ xs: "100%", md: "55%" }}
+        height={{ xs: "40vh", md: "65vh" }}
         ml={{ md: 5 }}
       >
         <Swiper
