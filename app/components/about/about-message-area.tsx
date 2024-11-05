@@ -21,6 +21,7 @@ const AboutMessageArea: React.FC<TProps> = ({ title, comment }) => {
         justifyContent={"center"}
         alignItems={"center"}
         border={"1px solid #E6E6E6"}
+        borderRadius={"8px"}
         p={{ xs: 2, md: 9 }}
       >
         <Box display={"flex"} alignItems={"center"} mr={{ md: 4 }}>
