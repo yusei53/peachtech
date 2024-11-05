@@ -11,9 +11,14 @@ type TProps = {
 
 const FormBar: React.FC<TProps> = ({ title, subtitle, src, description }) => {
   return (
-    <Box display="flex" flexDirection={"column"} alignItems={"center"} py={10}>
+    <Box
+      display="flex"
+      flexDirection={"column"}
+      alignItems={"center"}
+      py={{ xs: 6, sm: 10 }}
+    >
       <Heading title={title} />
-      <Box width={{ xs: "90%", sm: "60%" }} mt={5}>
+      <Box width={{ xs: "90%", sm: "60%" }} mt={{ xs: 3, sm: 5 }}>
         <Divider />
         <Link
           href={src}
