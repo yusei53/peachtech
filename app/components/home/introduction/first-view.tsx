@@ -8,12 +8,6 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import ThreejsText from "./threejs-text";
 
-const customStyles = `
-  .swiper-wrapper {
-    transition-timing-function: linear !important;
-  }
-`;
-
 const FirstView = () => {
   const images = [
     "/home1.jpg",
@@ -37,7 +31,6 @@ const FirstView = () => {
       <Box position={{ md: "absolute" }} top={{ md: 70 }} zIndex={200}>
         <ThreejsText />
       </Box>
-      <style>{customStyles}</style>
       <Box
         position={{ md: "absolute" }}
         top={{ md: 60 }}
@@ -53,6 +46,11 @@ const FirstView = () => {
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
+          }}
+          onInit={(swiper) => {
+            if (swiper.wrapperEl) {
+              swiper.wrapperEl.style.transitionTimingFunction = "linear";
+            }
           }}
           breakpoints={{
             320: {
