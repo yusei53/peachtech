@@ -37,9 +37,7 @@ const FirstView = () => {
       <Box position={{ md: "absolute" }} top={{ md: 70 }} zIndex={200}>
         <ThreejsText />
       </Box>
-
       <style>{customStyles}</style>
-
       <Box
         position={{ md: "absolute" }}
         top={{ md: 60 }}
@@ -74,12 +72,12 @@ const FirstView = () => {
           cssMode={false}
           allowTouchMove={false}
         >
-          {images.map((src, index) => (
+          {images.map((src) => (
             <SwiperSlide key={src}>
               <Image
                 fill
                 src={src}
-                alt={`Slide ${index}`}
+                alt={"image"}
                 style={{
                   objectFit: "cover",
                   borderRadius: 15,
