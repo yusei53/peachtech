@@ -1,11 +1,18 @@
 "use client";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Grid } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
+import ThreejsText from "./threejs-text";
+
+const customStyles = `
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+`;
 
 const FirstView = () => {
   const images = [
@@ -20,45 +27,61 @@ const FirstView = () => {
 
   return (
     <Box
+      position={{ md: "relative" }}
       display={"flex"}
       alignItems={"center"}
-      flexDirection={{ xs: "column-reverse", md: "row" }}
-      my={{ md: 5 }}
+      flexDirection={{ xs: "column", md: "row" }}
+      height={{ xs: "70vh", md: "100vh" }}
+      mt={{ md: 5 }}
     >
-      <Typography
-        component="h2"
-        px={{ md: 5, lg: 10 }}
-        pt={15}
-        fontSize={{ xs: 20, md: 28 }}
-      >
-        ここにthree.js
-        <br />
-        持ってきたいね
-      </Typography>
+      <Box position={{ md: "absolute" }} top={{ md: 70 }} zIndex={200}>
+        <ThreejsText />
+      </Box>
+      <style>{customStyles}</style>
       <Box
-        width={{ xs: "100%", md: "65%" }}
-        height={{ xs: "40vh", md: "70vh" }}
+        position={{ md: "absolute" }}
+        top={{ md: 60 }}
+        right={{ md: 40 }}
+        width={{ xs: "100%", md: "55%" }}
+        height={{ xs: "24vh", md: "65vh" }}
         ml={{ md: 5 }}
       >
         <Swiper
-          modules={[Pagination, Autoplay]}
           loop={true}
+          loopAdditionalSlides={1}
+          speed={10000}
           autoplay={{
-            delay: 3000,
+            delay: 0,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
+          breakpoints={{
+            320: {
+              slidesPerView: 1.2,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
           }}
-          style={{ width: "100%", height: "100%" }}
+          modules={[Grid, Pagination, Autoplay]}
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
+          cssMode={false}
+          allowTouchMove={false}
         >
-          {images.map((src, index) => (
-            <SwiperSlide key={index}>
+          {images.map((src) => (
+            <SwiperSlide key={src}>
               <Image
                 fill
                 src={src}
-                alt={`Slide ${index}`}
-                style={{ objectFit: "cover", borderRadius: 4 }}
+                alt={"image"}
+                style={{
+                  objectFit: "cover",
+                  borderRadius: 15,
+                }}
               />
             </SwiperSlide>
           ))}

@@ -1,5 +1,4 @@
 "use client";
-
 import { Box, Typography, styled } from "@mui/material";
 import { isPeachTechText } from "../../../const/documents";
 import Heading from "../../common/heading";
@@ -8,12 +7,7 @@ import Image from "next/image";
 const PeachTechIntroduction = () => {
   return (
     <>
-      <Box
-        display={"flex"}
-        flexDirection={"column"}
-        alignItems={"center"}
-        mt={10}
-      >
+      <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <Heading title={"PeachTechとは"} />
         <Typography
           whiteSpace={"pre-wrap"}
