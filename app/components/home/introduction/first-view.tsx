@@ -1,5 +1,5 @@
 "use client";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Grid } from "swiper/modules";
 import "swiper/css";
@@ -21,23 +21,22 @@ const FirstView = () => {
 
   return (
     <Box
-      position={{ md: "relative" }}
       display={"flex"}
+      position={"relative"}
       alignItems={"center"}
-      flexDirection={{ xs: "column", md: "row" }}
-      height={{ xs: "70vh", md: "100vh" }}
-      mt={{ md: 5 }}
+      justifyContent={"center"}
+      height={{ xs: "38vh", md: "82vh" }}
+      width={"100%"}
     >
-      <Box position={{ md: "absolute" }} top={{ md: 70 }} zIndex={200}>
-        <ThreejsText />
-      </Box>
       <Box
-        position={{ md: "absolute" }}
-        top={{ md: 60 }}
-        right={{ md: 40 }}
-        width={{ xs: "100%", md: "55%" }}
-        height={{ xs: "24vh", md: "65vh" }}
-        ml={{ md: 5 }}
+        position={"absolute"}
+        top={0}
+        left={0}
+        width={{ xs: "100%", md: "100%" }}
+        //ここを100にすると画面いっぱい。70にすると画面下の余白ができる
+        // height={{ xs: "100%", md: "100vh" }}
+        height={{ xs: "30vh", md: "70vh" }}
+        bgcolor="rgba(0, 0, 0, 1)" // 半透明な黒
       >
         <Swiper
           loop={true}
@@ -55,11 +54,11 @@ const FirstView = () => {
           breakpoints={{
             320: {
               slidesPerView: 1.2,
-              spaceBetween: 20,
+              spaceBetween: 0,
             },
             640: {
-              slidesPerView: 1,
-              spaceBetween: 40,
+              slidesPerView: 1.5,
+              spaceBetween: 0,
             },
           }}
           modules={[Grid, Pagination, Autoplay]}
@@ -78,12 +77,53 @@ const FirstView = () => {
                 alt={"image"}
                 style={{
                   objectFit: "cover",
-                  borderRadius: 15,
+                  zIndex: -1,
+                  opacity: 0.5,
                 }}
               />
             </SwiperSlide>
           ))}
         </Swiper>
+        <Box
+          position="absolute"
+          top="50%"
+          left="50%"
+          textAlign="center"
+          zIndex={2}
+          color="white"
+          sx={{ transform: "translate(-50%, -50%)" }}
+        >
+          <Typography
+            variant="h2"
+            fontFamily="-apple-system"
+            letterSpacing={3}
+            mt="5rem"
+            mb="1rem"
+            sx={{
+              color: "white",
+              fontSize: { xs: "2rem", md: 38 },
+              fontWeight: "bold",
+            }}
+          >
+            PeachTech
+          </Typography>
+
+          <Typography
+            variant="subtitle1"
+            fontFamily="Arial"
+            letterSpacing={4}
+            sx={{
+              color: "white",
+              fontSize: { xs: "1rem", md: 26 },
+              mt: 2, // 上に少し間隔を空ける
+            }}
+          >
+            〜明日を創造する第一歩をともに〜
+          </Typography>
+          {/* <Box sx={{ mt: 1 }}>
+            <ThreejsText />
+          </Box> */}
+        </Box>
       </Box>
     </Box>
   );
