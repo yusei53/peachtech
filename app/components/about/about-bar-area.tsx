@@ -22,7 +22,7 @@ const AboutBarArea: React.FC<TProps> = ({ title, aboutPageData }) => {
           md={4}
           display={{ xs: "flex", md: "block" }}
           justifyContent={{ xs: "flex-start", md: "center" }}
-          p={{ xs: 2, md: 0 }}
+          paddingBlock={2}
         >
           <Heading title={title} />
         </Grid>
@@ -33,11 +33,11 @@ const AboutBarArea: React.FC<TProps> = ({ title, aboutPageData }) => {
           display={"flex"}
           justifyContent={"center"}
           flexDirection={"column"}
-          px={{ xs: 2, md: 10 }}
+          px={{ md: 10 }}
         >
           {aboutPageData.map((value: aboutDataProps) => (
             <Box pb={{ xs: 6, md: 10 }} key={value.subTitle}>
-              <Typography component="h3" fontSize={{ xs: 18, sm: 20 }} fontWeight={"bold"}>
+              <Typography mb={3} component="h3" fontSize={{ xs: 18, sm: 20 }}>
                 {value.subTitle}
               </Typography>
               <Typography
