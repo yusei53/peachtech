@@ -78,7 +78,7 @@ const FirstView = () => {
         </Swiper>
         <Box
           position={"absolute"}
-          top={"37%"}
+          top={"45%"}
           left={"50%"}
           zIndex={1}
           color={"white"}
