@@ -37,7 +37,13 @@ const AboutBarArea: React.FC<TProps> = ({ title, aboutPageData }) => {
         >
           {aboutPageData.map((value: aboutDataProps) => (
             <Box pb={{ xs: 6, md: 10 }} key={value.subTitle}>
-              <Typography mb={3} component="h3" fontSize={{ xs: 18, sm: 20 }}>
+              <Typography
+                mb={2}
+                component="h3"
+                fontSize={{ xs: 18, sm: 20 }}
+                fontWeight={"550"}
+                letterSpacing={0.8}
+              >
                 {value.subTitle}
               </Typography>
               <Typography
