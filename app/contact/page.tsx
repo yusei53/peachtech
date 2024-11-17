@@ -1,5 +1,4 @@
 import FormBar from "../components/contact/form-bar";
-import SnsIconArea from "../components/contact/sns-icon";
 import FAQArea from "../components/contact/FAQ-area";
 
 const page = () => {
@@ -18,8 +17,6 @@ const page = () => {
         description="気になることや、企業様からのお問い合わせはこちらです"
       />
       <FAQArea />
-      {/* sns周りなしの方が綺麗かも */}
-      {/* <SnsIconArea /> */}
     </>
   );
 };
