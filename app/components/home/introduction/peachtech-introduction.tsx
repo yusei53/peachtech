@@ -12,10 +12,10 @@ const PeachTechIntroduction = () => {
           display={"flex"}
           flexDirection={"column"}
           alignItems={"center"}
-          pb={{ xs: 2, sm: 5 }}
+          pb={{ xs: 4, sm: 8 }}
         >
           <Heading title={"PeachTechとは"} />
-          <Typography
+          {/* <Typography
             whiteSpace={"nowrap"}
             my={5}
             px={{ xs: 4, sm: 0 }}
@@ -25,7 +25,7 @@ const PeachTechIntroduction = () => {
             PeachTechは、成蹊大学公認のプログラミングサークルです。
             <br />
             成蹊のエンジニア同士で繋がることができる場所を目指しています。
-          </Typography>
+          </Typography> */}
         </Box>
         {isPeachTechText.map((text) => (
           <Box
