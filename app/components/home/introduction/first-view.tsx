@@ -25,18 +25,11 @@ const FirstView = () => {
       position={"relative"}
       alignItems={"center"}
       justifyContent={"center"}
-      height={{ xs: "38vh", md: "82vh" }}
-      width={"100%"}
     >
       <Box
-        position={"absolute"}
-        top={0}
-        left={0}
-        width={{ xs: "100%", md: "100%" }}
-        //ここを100にすると画面いっぱい。70にすると画面下の余白ができる
-        // height={{ xs: "100%", md: "100vh" }}
         height={{ xs: "30vh", md: "70vh" }}
-        bgcolor="rgba(0, 0, 0, 1)" // 半透明な黒
+        width={"100%"}
+        bgcolor={"rgba(0, 0, 0, 1)"} // 半透明な黒
       >
         <Swiper
           loop={true}
@@ -77,7 +70,6 @@ const FirstView = () => {
                 alt={"image"}
                 style={{
                   objectFit: "cover",
-                  zIndex: -1,
                   opacity: 0.5,
                 }}
               />
@@ -85,38 +77,32 @@ const FirstView = () => {
           ))}
         </Swiper>
         <Box
-          position="absolute"
-          top="50%"
-          left="50%"
-          textAlign="center"
-          zIndex={2}
-          color="white"
+          position={"absolute"}
+          top={"37%"}
+          left={"50%"}
+          zIndex={1}
+          color={"white"}
           sx={{ transform: "translate(-50%, -50%)" }}
         >
           <Typography
-            variant="h2"
-            fontFamily="-apple-system"
+            fontFamily={"-apple-system"}
+            textAlign={"center"}
             letterSpacing={3}
-            mt="5rem"
-            mb="1rem"
-            sx={{
-              color: "white",
-              fontSize: { xs: "2rem", md: 38 },
-              fontWeight: "bold",
-            }}
+            mt={5}
+            mb={1}
+            color={"white"}
+            fontSize={{ xs: 19, md: 38 }}
+            fontWeight={"bold"}
           >
             PeachTech
           </Typography>
-
           <Typography
-            variant="subtitle1"
-            fontFamily="Arial"
+            fontFamily={"Arial"}
             letterSpacing={4}
-            sx={{
-              color: "white",
-              fontSize: { xs: "1rem", md: 26 },
-              mt: 2, // 上に少し間隔を空ける
-            }}
+            color={"white"}
+            fontSize={{ xs: 13, md: 20 }}
+            mt={2} // 上に少し間隔を空ける
+            whiteSpace={"nowrap"}
           >
             〜明日を創造する第一歩をともに〜
           </Typography>
