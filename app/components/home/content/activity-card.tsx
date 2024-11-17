@@ -1,4 +1,5 @@
-import { Card, CardMedia, CardContent, Typography, Box } from "@mui/material";
+"use client";
+import { Card, CardContent, Typography, Box, styled } from "@mui/material";
 import { activityContentDataProps } from "../../../const/activity-content-data";
 import Image from "next/image";
 
@@ -10,8 +11,8 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
   return (
     <Card
       sx={{
-        height: 220,
-        minWidth: { xs: 150, sm: 200 },
+        maxWidth: { xs: 240, sm: 310 },
+
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -19,7 +20,7 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
       }}
     >
       <Box mx={3} mt={3}>
-        <Image src={src} alt={title} width={80} height={80} />
+        <StyledImage src={src} alt={title} width={80} height={80} />
       </Box>
       <CardContent
         sx={{
@@ -42,5 +43,14 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
     </Card>
   );
 };
+
+const StyledImage = styled(Image)(({ theme }) => ({
+  width: 80,
+  height: 80,
+  [theme.breakpoints.down("sm")]: {
+    width: 50,
+    height: 50,
+  },
+}));
 
 export default ActivityCard;
