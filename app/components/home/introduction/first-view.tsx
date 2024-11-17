@@ -1,5 +1,5 @@
 "use client";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Grid } from "swiper/modules";
 import "swiper/css";
@@ -21,23 +21,15 @@ const FirstView = () => {
 
   return (
     <Box
-      position={{ md: "relative" }}
       display={"flex"}
+      position={"relative"}
       alignItems={"center"}
-      flexDirection={{ xs: "column", md: "row" }}
-      height={{ xs: "70vh", md: "100vh" }}
-      mt={{ md: 5 }}
+      justifyContent={"center"}
     >
-      <Box position={{ md: "absolute" }} top={{ md: 70 }} zIndex={200}>
-        <ThreejsText />
-      </Box>
       <Box
-        position={{ md: "absolute" }}
-        top={{ md: 60 }}
-        right={{ md: 40 }}
-        width={{ xs: "100%", md: "55%" }}
-        height={{ xs: "24vh", md: "65vh" }}
-        ml={{ md: 5 }}
+        height={{ xs: "30vh", md: "70vh" }}
+        width={"100%"}
+        bgcolor={"rgba(0, 0, 0, 1)"} // 半透明な黒
       >
         <Swiper
           loop={true}
@@ -55,11 +47,11 @@ const FirstView = () => {
           breakpoints={{
             320: {
               slidesPerView: 1.2,
-              spaceBetween: 20,
+              spaceBetween: 0,
             },
             640: {
-              slidesPerView: 1,
-              spaceBetween: 40,
+              slidesPerView: 1.5,
+              spaceBetween: 0,
             },
           }}
           modules={[Grid, Pagination, Autoplay]}
@@ -78,12 +70,46 @@ const FirstView = () => {
                 alt={"image"}
                 style={{
                   objectFit: "cover",
-                  borderRadius: 15,
+                  opacity: 0.5,
                 }}
               />
             </SwiperSlide>
           ))}
         </Swiper>
+        <Box
+          position={"absolute"}
+          top={"45%"}
+          left={"50%"}
+          zIndex={1}
+          color={"white"}
+          sx={{ transform: "translate(-50%, -50%)" }}
+        >
+          <Typography
+            fontFamily={"-apple-system"}
+            textAlign={"center"}
+            letterSpacing={3}
+            mt={5}
+            mb={1}
+            color={"white"}
+            fontSize={{ xs: 19, md: 38 }}
+            fontWeight={"bold"}
+          >
+            PeachTech
+          </Typography>
+          <Typography
+            fontFamily={"Arial"}
+            letterSpacing={4}
+            color={"white"}
+            fontSize={{ xs: 13, md: 20 }}
+            mt={2} // 上に少し間隔を空ける
+            whiteSpace={"nowrap"}
+          >
+            〜明日を創造する第一歩をともに〜
+          </Typography>
+          {/* <Box sx={{ mt: 1 }}>
+            <ThreejsText />
+          </Box> */}
+        </Box>
       </Box>
     </Box>
   );

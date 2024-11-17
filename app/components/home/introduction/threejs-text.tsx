@@ -8,7 +8,7 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 const ThreejsText = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
-  
+
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef<THREE.Scene | null>(null);
@@ -22,14 +22,18 @@ const ThreejsText = () => {
       const newPosition = isSmallScreen
         ? { x: 0, y: -100, z: 720 }
         : { x: -120, y: -100, z: 720 };
-      
-      cameraRef.current.position.set(newPosition.x, newPosition.y, newPosition.z);
+
+      cameraRef.current.position.set(
+        newPosition.x,
+        newPosition.y,
+        newPosition.z
+      );
       cameraRef.current.updateProjectionMatrix();
-      
+
       if (controlsRef.current) {
         controlsRef.current.update();
       }
-      
+
       // シーンを再レンダリング
       if (sceneRef.current) {
         rendererRef.current.render(sceneRef.current, cameraRef.current);
@@ -73,12 +77,16 @@ const ThreejsText = () => {
       10000
     );
     cameraRef.current = camera;
-    
+
     // 初期カメラ位置の設定
     const initialPosition = isSmallScreen
-      ? { x: 0, y: -100, z: 720 }
-      : { x: -120, y: -100, z: 720 };
-    camera.position.set(initialPosition.x, initialPosition.y, initialPosition.z);
+      ? { x: 0, y: -100, z: 520 }
+      : { x: 0, y: -100, z: 520 };
+    camera.position.set(
+      initialPosition.x,
+      initialPosition.y,
+      initialPosition.z
+    );
 
     // レンダリング関数
     const render = () => {
@@ -88,7 +96,7 @@ const ThreejsText = () => {
     // フォントローダー
     const loader = new FontLoader();
     loader.load("/fonts/Shippori Mincho B1_Bold.json", function (font) {
-      const color = 0x006699;
+      const color = 0xffffff;
 
       const matDark = new THREE.LineBasicMaterial({
         color: color,
@@ -98,7 +106,7 @@ const ThreejsText = () => {
       const matLite = new THREE.MeshBasicMaterial({
         color: color,
         transparent: true,
-        opacity: 0.4,
+        opacity: 0.8,
         side: THREE.DoubleSide,
       });
 
@@ -166,6 +174,14 @@ const ThreejsText = () => {
     controls.target.set(0, 0, 0);
     controls.update();
 
+    // カメラの回転制限を設定
+    controls.maxPolarAngle = Math.PI / 1.8; // 回転範囲を制限
+    controls.minPolarAngle = Math.PI / 2;
+
+    // 横の回転範囲を設定（必要に応じて調整）
+    controls.minAzimuthAngle = -Math.PI / 4; // 左方向の最大角度
+    controls.maxAzimuthAngle = Math.PI / 4; // 右方向の最大角度
+
     controls.addEventListener("change", render);
 
     window.addEventListener("resize", handleResize);
@@ -181,16 +197,20 @@ const ThreejsText = () => {
   return (
     <Box
       ref={containerRef}
-      width={{ xs: "100vw", md: "45vw" }}
-      height={{ xs: "35vh", md: "65vh" }}
+      width={{ xs: "100vw", md: "60vw" }}
+      height={{ xs: "15vh", md: "30vh" }}
       position={"relative"}
+      mb={{ xs: 2, md: 5 }}
+      sx={{
+        color: "white",
+        fontSize: { xs: "1rem", md: 26 },
+      }}
     >
       <canvas
         ref={canvasRef}
         style={{
-          position: "absolute",
-          width: "100%",
-          height: "100%",
+          width: "150%",
+          height: "150%",
         }}
       />
     </Box>
