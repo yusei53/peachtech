@@ -37,10 +37,18 @@ const AchievementCard: React.FC<achievementDataProps> = ({
         flexDirection={"column"}
       >
         <Typography fontSize={{ xs: 10, md: 15 }}>{date}</Typography>
-        <Typography fontSize={{ xs: 12, md: 18 }} fontWeight={"bold"} mb={1}>
+        <Typography
+          fontSize={{ xs: 16, md: 18 }}
+          fontWeight={"bold"}
+          letterSpacing={{ xs: 0.8, md: 1 }}
+          mb={1}
+        >
           {title}
         </Typography>
-        <Typography fontSize={{ xs: 10, md: 15 }} letterSpacing={{ md: 1 }}>
+        <Typography
+          fontSize={{ xs: 12, md: 15 }}
+          letterSpacing={{ xs: 0.8, md: 1 }}
+        >
           {content}
         </Typography>
       </Grid>
