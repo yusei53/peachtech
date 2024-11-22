@@ -18,7 +18,7 @@ const ActivityAchievement = () => {
         {achievementContentData.map((data) => (
           <Fragment key={data.src}>
             <AchievementCard
-              src={data.src}
+              src={`/achieve/${data.src}`}
               date={data.date}
               title={data.title}
               content={data.content}
