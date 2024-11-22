@@ -12,7 +12,7 @@ const Footer = () => {
       display={"flex"}
       justifyContent={{ xs: "flex-start", sm: "center" }}
       flexDirection={"column"}
-      px={{ xs: 10, md: 22 }}
+      px={{ xs: 5, md: 22 }}
       pt={3}
       pb={{ xs: 10, md: 15 }}
     >
