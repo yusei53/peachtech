@@ -11,7 +11,7 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
   return (
     <Card
       sx={{
-        maxWidth: { xs: 240, sm: 310 },
+        maxWidth: { xs: 290, sm: 310 },
 
         display: "flex",
         flexDirection: "column",
@@ -38,7 +38,7 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
         >
           {title}
         </Typography>
-        <Typography fontSize={{ xs: 10, md: 12 }}>{content}</Typography>
+        <Typography fontSize={13}>{content}</Typography>
       </CardContent>
     </Card>
   );
