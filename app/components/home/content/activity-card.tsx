@@ -11,7 +11,7 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
   return (
     <Card
       sx={{
-        maxWidth: { xs: 270, sm: 310 },
+        maxWidth: { xs: 290, sm: 310 },
 
         display: "flex",
         flexDirection: "column",
