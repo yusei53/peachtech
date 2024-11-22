@@ -9,19 +9,19 @@ export const activityContentData: activityContentDataProps[] = [
     src: "/icon_157130_256.png",
     title: "オンライン・対面活動",
     content:
-      "Discordを使ってオンラインで活動し、週に一回対面でワイワイ開発をしています!",
+      "Discordを使ってオンラインで活動し、週に一度対面でワイワイ賑やかに開発をしています!!",
   },
   {
     src: "/icon_152770_256.png",
     title: "勉強会、LT会",
     content:
-      "使いたい技術の共有や最新知識を学ぶ勉強会、LT会などを積極的に行なっております!",
+      "使いたい技術の共有や最新知識を学ぶ勉強会、LT会などを積極的に行なっており、参加者同士の交流も活発です!",
   },
   {
     src: "/icon_158210_256.png",
     title: "チーム開発",
     content:
-      "ゲーム・Webサイト・Webアプリ・電子工作などを同期や先輩たちと開発をしています!",
+      "ゲーム・Webサイト・Webアプリ・電子工作などを同期や先輩たちと一緒に楽しく開発を進めています!",
   },
   {
     src: "/icon_144440_256.png",
@@ -38,6 +38,6 @@ export const activityContentData: activityContentDataProps[] = [
   {
     src: "/icon_141950_256.png",
     title: "イベント",
-    content: `開発合宿や欅祭での出展、その他プログラミング以外の楽しいイベントもあります!`,
+    content: `開発合宿や欅祭での出展、その他プログラミング以外の楽しいイベントも多数開催しています!!`,
   },
 ];
