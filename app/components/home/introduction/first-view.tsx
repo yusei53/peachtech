@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
-import ThreejsText from "./threejs-text";
 
 const FirstView = () => {
   const images = [
@@ -14,9 +13,17 @@ const FirstView = () => {
     "/home2.png",
     "/home3.jpg",
     "/home4.jpg",
-    "/home5.png",
+    "/home5.jpg",
     "/home6.jpg",
     "/home7.jpg",
+    "/home8.jpg",
+    "/home9.jpg",
+    "/home10.jpg",
+    "/home11.png",
+    "/home12.jpeg",
+    "/home13.jpg",
+    "/home14.jpg",
+    "/home15.jpg",
   ];
 
   return (
