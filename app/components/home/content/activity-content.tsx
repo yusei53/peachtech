@@ -25,7 +25,7 @@ const ActivityContent = () => {
             justifyContent={"center"}
           >
             <ActivityCard
-              src={data.src}
+              src={`/activity/${data.src}`}
               title={data.title}
               content={data.content}
             />
