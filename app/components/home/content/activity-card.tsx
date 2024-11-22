@@ -38,7 +38,7 @@ const ActivityCard: React.FC<activityContentDataProps> = ({
         >
           {title}
         </Typography>
-        <Typography fontSize={{ xs: 13, md: 13 }}>{content}</Typography>
+        <Typography fontSize={13}>{content}</Typography>
       </CardContent>
     </Card>
   );
