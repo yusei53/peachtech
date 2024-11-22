@@ -9,21 +9,21 @@ import Image from "next/image";
 
 const FirstView = () => {
   const images = [
-    "/home1.jpg",
-    "/home2.png",
-    "/home3.jpg",
-    "/home4.jpg",
-    "/home5.jpg",
-    "/home6.jpg",
-    "/home7.jpg",
-    "/home8.jpg",
-    "/home9.jpg",
-    "/home10.jpg",
-    "/home11.png",
-    "/home12.jpeg",
-    "/home13.jpg",
-    "/home14.jpg",
-    "/home15.jpg",
+    "home1.jpg",
+    "home2.png",
+    "home3.jpg",
+    "home4.jpg",
+    "home5.jpg",
+    "home6.jpg",
+    "home7.jpg",
+    "home8.jpg",
+    "home9.jpg",
+    "home10.jpg",
+    "home11.png",
+    "home12.jpeg",
+    "home13.jpg",
+    "home14.jpg",
+    "home15.jpg",
   ];
 
   return (
@@ -73,7 +73,7 @@ const FirstView = () => {
             <SwiperSlide key={src}>
               <Image
                 fill
-                src={src}
+                src={`/swiper/${src}`}
                 alt={"image"}
                 style={{
                   objectFit: "cover",
