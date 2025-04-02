@@ -17,7 +17,7 @@ const Sponsor = () => {
         >
           <SImage
             src="/TechTrain_Logo.png"
-            alt="logo"
+            alt="TechTrain Logo"
             width={300}
             height={100}
           />
