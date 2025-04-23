@@ -8,7 +8,7 @@ export type achievementDataProps = {
 export const achievementContentData: achievementDataProps[] = [
   {
     src: "achieve11.png",
-    date: "2025.1.10",
+    date: "2025.4.15",
     title: "PeachTechが技育プロジェクトの公式パートナーになりました！",
     content:
       "PeachTechが技育プロジェクトの公式パートナーになりました！今後もさらなる成長を目指し、活動していきます！",
