@@ -7,6 +7,34 @@ export type achievementDataProps = {
 
 export const achievementContentData: achievementDataProps[] = [
   {
+    src: "achieve12.png",
+    date: "2025.4.26",
+    title: "新入生welcome会を開催しました！",
+    content:
+      "PeachTechの新入生welcome会を開催しました！PeachTechメンバーが開発したプロダクト紹介などを行い、実際に制作物にも触れてもらいました！また懇親会を通して先輩や同期との親睦も深められました！これからも新入生と共に切磋琢磨していきます！",
+  },
+  {
+    src: "achieve11.png",
+    date: "2025.4.15",
+    title: "PeachTechが技育プロジェクトの公式パートナーになりました！",
+    content:
+      "PeachTechが技育プロジェクトの公式パートナーになりました！今後もさらなる成長を目指し、活動していきます！",
+  },
+  {
+    src: "achieve10.png",
+    date: "2025.3.19",
+    title: "4年生の送別会を行いました！",
+    content:
+      "卒業式に4年生の送別会を行いました！PeachTechロゴ入りのタンブラーをプレゼントし、元代表にはweb色紙を送りました！4年生の方々、今まで本当にお世話になりました！皆様の更なるご活躍を期待しています！！",
+  },
+  {
+    src: "achieve9.png",
+    date: "2025.2.26",
+    title: "ピチフェスを開催しました！",
+    content:
+      "PeachTechでサークル内イベントとしてピチフェスを開催しました！様々な分野のプログラミングに触れることができ、楽しく学ぶことができました！「思っていたより難しくなかった」との声も多く、作りたいものを自分の手で作れる楽しさを改めて感じられたと思います！",
+  },
+  {
     src: "achieve8.png",
     date: "2025.1.10",
     title: "26卒のメンバーでご飯会を行いました！",
