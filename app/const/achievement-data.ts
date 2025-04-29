@@ -7,6 +7,13 @@ export type achievementDataProps = {
 
 export const achievementContentData: achievementDataProps[] = [
   {
+    src: "achieve12.png",
+    date: "2025.4.26",
+    title: "新入生welcome会を開催しました！",
+    content:
+      "PeachTechの新入生welcome会を開催しました！PeachTechメンバーが開発したプロダクト紹介などを行い、実際に制作物にも触れてもらいました！また懇親会を通して先輩や同期との親睦も深められました！これからも新入生と共に切磋琢磨していきます！",
+  },
+  {
     src: "achieve11.png",
     date: "2025.4.15",
     title: "PeachTechが技育プロジェクトの公式パートナーになりました！",
